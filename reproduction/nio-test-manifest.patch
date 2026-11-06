@@ -1,0 +1,11 @@
+diff --git a/Package.swift b/Package.swift
+index a48a1b34..1df9998e 100644
+--- a/Package.swift
++++ b/Package.swift
+@@ -641,3 +641,6 @@ for target in package.targets {
+     }
+ }
+ // --- END: STANDARD CROSS-REPO SETTINGS DO NOT EDIT --- //
++
++package.targets.removeAll { $0.type == .test }
++package.targets.append(.testTarget(name: "ResearchRepro", dependencies: ["NIOCore", .product(name: "DequeModule", package: "swift-collections")], path: "ResearchRepro"))

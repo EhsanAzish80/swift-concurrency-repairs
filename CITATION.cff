@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the technical report when using these exploratory artifacts."
+title: "What Swift Concurrency Repairs Actually Guarantee"
+authors:
+  - family-names: "Azish"
+    given-names: "Ehsan"
+version: 1.0.0
+date-released: 2026-11-06
+type: report

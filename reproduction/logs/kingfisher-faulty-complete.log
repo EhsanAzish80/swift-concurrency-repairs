@@ -1,0 +1,720 @@
+warning: /USER_HOME/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /USER_HOME/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: 'kingfisher': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c -primary-file /RESEARCH_ROOT/kingfisher/Package@swift-5.9.swift -target arm64-apple-macosx14.0 -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/ManifestAPI -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -vfsoverlay /PRIVATE_TEMP -module-cache-path /RESEARCH_ROOT/module-cache -no-color-diagnostics -Xcc -fno-color-diagnostics -swift-version 5 -package-description-version 5.9.0 -new-driver-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-driver -empty-abi-descriptor -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -no-auto-bridging-header-chaining -module-name main -disable-clang-spi -target-sdk-version 27.2 -target-sdk-name macosx27.2 -external-plugin-path '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' -external-plugin-path '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/local/lib/swift/host/plugins#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -o /PRIVATE_TEMP
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang /PRIVATE_TEMP -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks --sysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk --target=arm64-apple-macosx14.0 -L /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift -rpath /usr/lib/swift -L /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/ManifestAPI -L /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -lPackageDescription -Xlinker -rpath -Xlinker /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/ManifestAPI -o /PRIVATE_TEMP
+Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)
+Target: arm64-apple-macosx14.0
+warning: 'kingfisher': found 1 file(s) which are unhandled; explicitly declare them as resources or exclude from the target
+    /RESEARCH_ROOT/kingfisher/Sources/Info.plist
+Building for debugging...
+Planning build
+Compute target dependency graph
+info: Building targets in dependency order
+info: Target dependency graph (5 targets)
+info: Target 'AllIncludingTests' in project 'Aggregate'
+info: ➜ Explicit dependency on target 'ResearchRepro-product' in project 'Kingfisher'
+info: ➜ Dependency on target 'ResearchRepro-product' in project 'Kingfisher' via transitive dependency through 'ResearchRepro-test-runner'
+info: ➜ Explicit dependency on target 'Kingfisher-product' in project 'Kingfisher'
+info: ➜ Explicit dependency on target 'Kingfisher' in project 'Kingfisher'
+info: ➜ Explicit dependency on target 'Kingfisher_Kingfisher' in project 'Kingfisher'
+info: Target 'Kingfisher-product' in project 'Kingfisher'
+info: ➜ Explicit dependency on target 'Kingfisher' in project 'Kingfisher'
+info: ➜ Explicit dependency on target 'Kingfisher_Kingfisher' in project 'Kingfisher'
+info: Target 'ResearchRepro-product' in project 'Kingfisher'
+info: ➜ Explicit dependency on target 'Kingfisher' in project 'Kingfisher'
+info: Target 'Kingfisher' in project 'Kingfisher'
+info: ➜ Explicit dependency on target 'Kingfisher_Kingfisher' in project 'Kingfisher'
+info: Target 'Kingfisher_Kingfisher' in project 'Kingfisher' (no dependencies)
+Gather provisioning inputs
+Planning complete
+[Pre-planning 1 / 124]
+Discovering version info for clang
+Discovering version info for swiftc
+Discovering version info for libtool
+Discovering version info for ld
+[Planning deferred tasks]
+Create build description
+Build description signature: 396f511ec3f066bbac8cd8608f5dff7c
+Build description path: /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/XCBuildData/396f511ec3f066bbac8cd8608f5dff7c.xcbuilddata
+Build stat cache for /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk
+    cd /RESEARCH_ROOT
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -o /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache
+
+Failed to create FS event stream. Considering the cache up-to-date.
+Planning Swift module Kingfisher (arm64)
+    cd /RESEARCH_ROOT
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name Kingfisher -Onone @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE -DXcode -DREPRO_FAULTY -strict-concurrency\=complete -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos12.0 -g -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/kingfisher/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name kingfisher -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+[2 / 6] Kingfisher
+Unblock downstream dependents of Kingfisher (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name Kingfisher -Onone @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE -DXcode -DREPRO_FAULTY -strict-concurrency\=complete -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos12.0 -g -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/kingfisher/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name kingfisher -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Process empty-Kingfisher_Kingfisher.plist
+    cd /RESEARCH_ROOT/kingfisher
+    builtin-infoPlistUtility /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher_Kingfisher-b.build/empty-Kingfisher_Kingfisher.plist -producttype com.apple.product-type.bundle -expandbuildsettings -platform macosx -o /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/Kingfisher_Kingfisher.bundle/Contents/Info.plist
+
+Compile Kingfisher (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name Kingfisher -Onone @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE -DXcode -DREPRO_FAULTY -strict-concurrency\=complete -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos12.0 -g -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/kingfisher/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name kingfisher -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Copy Kingfisher_Kingfisher.bundle
+    cd /RESEARCH_ROOT/kingfisher
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/Kingfisher_Kingfisher.bundle /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Resources
+
+[6 / 8] ResearchRepro-product
+Process empty-ResearchRepro.plist
+    cd /RESEARCH_ROOT/kingfisher
+    builtin-infoPlistUtility /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/empty-ResearchRepro.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -platform macosx -scanforprivacyfile /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Resources/Kingfisher_Kingfisher.bundle -o /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Info.plist
+
+Planning Swift module ResearchRepro (arm64)
+    cd /RESEARCH_ROOT
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name ResearchRepro -Onone @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -DREPRO_FAULTY -strict-concurrency\=complete -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos14.0 -g -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/kingfisher/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name kingfisher -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+[8 / 10] ResearchRepro-product
+Compile ResearchRepro (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name ResearchRepro -Onone @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -DREPRO_FAULTY -strict-concurrency\=complete -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos14.0 -g -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/kingfisher/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name kingfisher -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Unblock downstream dependents of ResearchRepro (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name ResearchRepro -Onone @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -DREPRO_FAULTY -strict-concurrency\=complete -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos14.0 -g -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/kingfisher/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name kingfisher -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Link ResearchRepro (arm64)
+    cd /RESEARCH_ROOT/kingfisher
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -Xlinker -reproducible -target arm64-apple-macos14.0 -Xlinker -bundle -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -Xlinker -no_warn_duplicate_libraries -L/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/EagerLinkingTBDs/Debug -L/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/EagerLinkingTBDs/Debug -F/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/PackageFrameworks -F/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Fsystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/PackageFrameworks -Xlinker -rpath -Xlinker @loader_path/../../.. -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @loader_path/../Frameworks -Xlinker -rpath -Xlinker /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_lto.o -Xclang-linker -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_dependency_info.dat -link-objc-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftmodule -DREPRO_FAULTY -strict-concurrency\=complete -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -Xlinker -no_adhoc_codesign -o /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/MacOS/ResearchRepro -no-stdlib-rpath
+
+[11 / 12] ResearchRepro-product
+Copy Swift standard libraries into ResearchRepro.xctest
+    cd /RESEARCH_ROOT/kingfisher
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/MacOS/ResearchRepro --scan-folder /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Frameworks --scan-folder /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/PlugIns --scan-folder /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Library/SystemExtensions --scan-folder /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Extensions --platform macosx --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+
+Sign ResearchRepro.xctest
+    cd /RESEARCH_ROOT/kingfisher
+    
+    Signing Identity:     "-"
+    
+    /usr/bin/codesign --force --sign - --entitlements /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/ResearchRepro.xctest.xcent --timestamp\=none --generate-entitlement-der --strip-disallowed-xattrs /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest
+
+Target PACKAGE-PRODUCT:kingfisher_Kingfisher.Kingfisher up to date.
+Prune stale explicit modules at /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules
+Prune stale explicit modules at /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/ExplicitPrecompiledModules
+Prune stale explicit modules at /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules
+Build complete! (3,52 sec)
+􀟈  Test run started.
+􀄵  Swift Standard Library Version: 6.4
+􀄵  Swift Compiler Version: 6.4.2
+􀄵  Testing Library Version: 2403
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀄵  OS Version: 27.2 (26B123)
+􀟈  Suite ResearchRepro started.
+􀟈  Test cancellationBeforeAttachmentIsRemembered() started.
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 0
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 1
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 2
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 3
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 4
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 5
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 6
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 7
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 8
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 9
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 10
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 11
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 12
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 13
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 14
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 15
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 16
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 17
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 18
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 19
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 20
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 21
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 22
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 23
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 24
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 25
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 26
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 27
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 28
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 29
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 30
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 31
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 32
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 33
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 34
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 35
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 36
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 37
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 38
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 39
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 40
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 41
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 42
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 43
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 44
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 45
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 46
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 47
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 48
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 49
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 50
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 51
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 52
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 53
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 54
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 55
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 56
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 57
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 58
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 59
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 60
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 61
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 62
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 63
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 64
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 65
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 66
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 67
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 68
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 69
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 70
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 71
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 72
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 73
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 74
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 75
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 76
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 77
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 78
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 79
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 80
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 81
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 82
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 83
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 84
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 85
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 86
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 87
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 88
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 89
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 90
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 91
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 92
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 93
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 94
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 95
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 96
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 97
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 98
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() recorded an issue at ResearchRepro.swift:28:13: Expectation failed: underlying.isCancelled
+􀄵  cancel-before-attach iteration 99
+􀄵  underlying.isCancelled: Swift.Bool → false
+􀄵    underlying: Swift.Task<(), Swift.Never> → Task<(), Never>(_task: (Opaque Value))
+􀄵      _task: Builtin.NativeObject → (Opaque Value)
+􀄵    isCancelled: Swift.Bool → false
+􀢄  Test cancellationBeforeAttachmentIsRemembered() failed after 0.006 seconds with 100 issues.
+􀟈  Test cancellationAfterAttachmentControl() started.
+􁁛  Test cancellationAfterAttachmentControl() passed after 0.001 seconds.
+􀟈  Test noCancellationControl() started.
+􁁛  Test noCancellationControl() passed after 0.001 seconds.
+􀢄  Suite ResearchRepro failed after 0.007 seconds with 100 issues.
+􀢄  Test run with 3 tests in 1 suite failed after 0.008 seconds with 100 issues.
+Note: Some test targets reported failures:
+  - ResearchRepro (Swift Testing)

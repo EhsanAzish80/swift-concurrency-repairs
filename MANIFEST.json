@@ -1,0 +1,182 @@
+[
+  {
+    "file": "CITATION.cff",
+    "sha256": "bcbf3298693324533f559889ffad0b1757be280bde82cf3c5aaa9ccdecd6759c",
+    "bytes": 276
+  },
+  {
+    "file": "README.md",
+    "sha256": "a50fd1478df2d4d606a9f0812866c874dcd46009381261bb1e511533ad42a5ee",
+    "bytes": 4329
+  },
+  {
+    "file": "THIRD_PARTY_LICENSES/kingfisher-LICENSE",
+    "sha256": "50d6d8aa941156dbce15f74a6ef897a621865c99dd4d5ad2a71b8b28e095bb1e",
+    "bytes": 1076
+  },
+  {
+    "file": "THIRD_PARTY_LICENSES/nio-LICENSE.txt",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "bytes": 11358
+  },
+  {
+    "file": "THIRD_PARTY_LICENSES/nio-NOTICE.txt",
+    "sha256": "d25ed2452b3476c342082d11e4e8bf5459174d2836124f842b499850bcebc50e",
+    "bytes": 3266
+  },
+  {
+    "file": "THIRD_PARTY_LICENSES/nuke-LICENSE",
+    "sha256": "9832f8b0b64803f7bb5a4f2649b3908edd3ead711b1ddd8c563a7fdb7d81b288",
+    "bytes": 1091
+  },
+  {
+    "file": "data/case-ledger.json",
+    "sha256": "9b94a347fa544f63585aaaf652e6e33b32d1790245bb1c4e0b9425d933ee575f",
+    "bytes": 20608
+  },
+  {
+    "file": "data/detection-triage.json",
+    "sha256": "0c4baa05a32fd57ebb1fb8d1854a7c9cafeeb0eb112a08e4d2be70441122b268",
+    "bytes": 49012
+  },
+  {
+    "file": "data/reproduction-summary.json",
+    "sha256": "628c5fd527f72f32119204302143d9d8ac048b78aedeb9e98c3b5038525039c6",
+    "bytes": 5251
+  },
+  {
+    "file": "publication.json",
+    "sha256": "b8f7a795fe52ce48b98e4568a3dc55f47051e6040b72e256026d26c878041e51",
+    "bytes": 437
+  },
+  {
+    "file": "report/render_report.py",
+    "sha256": "1dfd5017c8173c6a596ff176e28c1dbf538018d59d5d2946cb8e32836bd5bde0",
+    "bytes": 4340
+  },
+  {
+    "file": "report/report-content.json",
+    "sha256": "1a9439ba78a22449a6e921fbfd2ec2487ace8ddc008424158bdd6fd629c840a4",
+    "bytes": 54201
+  },
+  {
+    "file": "report/report.md",
+    "sha256": "4774de6b5ff8b992478686270b3a39936106ef8e9fcdf79e07e8c48ecdcb4b00",
+    "bytes": 35214
+  },
+  {
+    "file": "report/swift-concurrency-repairs-v1.0.pdf",
+    "sha256": "a302822eb3fcf2144022b6a03c299b52217e8def35d5d8d6c6e0368835a2585a",
+    "bytes": 122219
+  },
+  {
+    "file": "reproduction/fixtures/kingfisher-original-Package.swift",
+    "sha256": "c0a8206982bcce1c29aab34813a889c45af1b4ad2d1e7eddb8dcd0f7aa4457bf",
+    "bytes": 492
+  },
+  {
+    "file": "reproduction/fixtures/kingfisher.swift",
+    "sha256": "9218c8d39eacf4d3762f8a4290082f34fe66702854655a889d5dc59f0528db12",
+    "bytes": 1914
+  },
+  {
+    "file": "reproduction/fixtures/nio-original-Package.swift",
+    "sha256": "a5c23594be5ad425e66126e1138e0014e8ce31d2673c8028c10171bf1f202b06",
+    "bytes": 20131
+  },
+  {
+    "file": "reproduction/fixtures/nio.swift",
+    "sha256": "1d3a679bda73f635ea2f49749015b7396b5d6af4119f46472c1b4dac87150f1c",
+    "bytes": 1782
+  },
+  {
+    "file": "reproduction/fixtures/nuke-original-Package.swift",
+    "sha256": "7354a2c0a6cec85c25c6226f9afc0225527453b8a1499c3d553290aab2b0cf70",
+    "bytes": 724
+  },
+  {
+    "file": "reproduction/fixtures/nuke.swift",
+    "sha256": "b704243dc45f5045c01a49d8342c93dfa4ec710deb6659a6541d4c22bc137950",
+    "bytes": 1562
+  },
+  {
+    "file": "reproduction/install_fixtures.py",
+    "sha256": "39ceb0e2be26ca57497fe3a8f558ba5044879d89190d322d05a630bb97aea176",
+    "bytes": 1518
+  },
+  {
+    "file": "reproduction/kingfisher-test-manifest.patch",
+    "sha256": "8654c29b6929e676fdd6269281c09ec8b7d5b2abd857037000d1385fefa6a586",
+    "bytes": 330
+  },
+  {
+    "file": "reproduction/log-provenance.json",
+    "sha256": "c5a28b209c7d12e1471b44f383456ea70dcb5d3141d805df0749903cede7ffba",
+    "bytes": 3057
+  },
+  {
+    "file": "reproduction/logs/kingfisher-faulty-complete.log",
+    "sha256": "762f2d8f8583264373d81ff5f3631b80a23a514fa7fc0342d2c3718059ac146f",
+    "bytes": 78027
+  },
+  {
+    "file": "reproduction/logs/kingfisher-faulty-default-run.log",
+    "sha256": "8c2b3cdf06a7b829a815a00925e764895eaec08357b115496633733d08dd7455",
+    "bytes": 113472
+  },
+  {
+    "file": "reproduction/logs/kingfisher-fixed-complete.log",
+    "sha256": "628ac120d060006dbfe8415e5c640644268d9eb586ca0d49188ab482dd80345a",
+    "bytes": 54169
+  },
+  {
+    "file": "reproduction/logs/kingfisher-fixed-default.log",
+    "sha256": "66d59a3ec3be90fd15c37545fd7b79dc458e7dd28371cf414b780f4dddeffd9f",
+    "bytes": 38049
+  },
+  {
+    "file": "reproduction/logs/nio-faulty-isolated.log",
+    "sha256": "3378924cbd637bf473df15ea6ecf977584219bba7bec09341ceacdf4dddb33af",
+    "bytes": 721360
+  },
+  {
+    "file": "reproduction/logs/nio-fixed-isolated.log",
+    "sha256": "b2a1d07e6751378278b0924ca38888122a006c7238a3a28f390a2ac258262f28",
+    "bytes": 696986
+  },
+  {
+    "file": "reproduction/logs/nuke-faulty-run.log",
+    "sha256": "73a56303675f55efa363d051d71756ae82d832f4ea0882fb472e93752aed0fc8",
+    "bytes": 122860
+  },
+  {
+    "file": "reproduction/logs/nuke-fixed.log",
+    "sha256": "19db2d742f4b53b8235135ff0c5e859a63152d1ee91dcfd90bf8a9bcc0d9a6e1",
+    "bytes": 29194
+  },
+  {
+    "file": "reproduction/nio-Package.resolved",
+    "sha256": "dab0f5c53345bb63b4dc748ff55679549eb5a6b1d12625dc28b878f08f2b31c3",
+    "bytes": 941
+  },
+  {
+    "file": "reproduction/nio-test-manifest.patch",
+    "sha256": "de0ad05f38c71d82a940f7885d5867bd498c0b76cbb3148bb2cd2749f3011120",
+    "bytes": 459
+  },
+  {
+    "file": "reproduction/nuke-test-manifest.patch",
+    "sha256": "19413254f17601f6fa864cbf782af73252bf35c3ef57bd7982dd35f2da8d0f34",
+    "bytes": 340
+  },
+  {
+    "file": "reproduction/results.json",
+    "sha256": "a8c3c7dbb8673949dc13c5e7a5962a943a1cfb96cddfdec68b75b084e26b50b8",
+    "bytes": 11784
+  },
+  {
+    "file": "reproduction/run_test.py",
+    "sha256": "d2a33dc80d717c93733db6bca8fb441e750eb25daa0b907df0d987daf48371a0",
+    "bytes": 1207
+  }
+]

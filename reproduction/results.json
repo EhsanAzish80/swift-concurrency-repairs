@@ -1,0 +1,360 @@
+{
+  "environment": {
+    "machine_model": "Mac13,1",
+    "chip_type": "Apple M1 Max",
+    "physical_memory": "32 GB",
+    "os_version": "27.2",
+    "os_build": "26B123"
+  },
+  "toolchain": "Apple Swift 6.4.2 (swiftlang-6.4.2.1.9), Xcode 27.2 (27B52)",
+  "sdk": "MacOSX27.2.sdk; compiler command target macOS 12/13/14 as selected by SwiftPM",
+  "case_results": [
+    {
+      "case": "Nuke916/P29",
+      "level": "real production pipeline, test-only SwiftPM target",
+      "faulty_immediate_memory_hit_failures": 20,
+      "faulty_immediate_memory_hit_trials": 20,
+      "fixed_immediate_memory_hit_failures": 0,
+      "fixed_immediate_memory_hit_trials": 20,
+      "faulty_late_subscriber_failures": 20,
+      "fixed_late_subscriber_failures": 0,
+      "late_trials_per_revision": 20,
+      "settings": "Swift 6 production module; unchecked Sendable boundary retained",
+      "network_used_by_fixture": false
+    },
+    {
+      "case": "Kingfisher2526/P07 follow-up",
+      "level": "real internal cancellation bridge and DownloadTask component; production onCancel action adapted for old/new API",
+      "faulty_early_cancellation_failures": 100,
+      "fixed_early_cancellation_failures": 0,
+      "trials_per_configuration": 100,
+      "configurations": [
+        "selected SwiftPM Swift 5 default",
+        "Swift 5 with explicit strict-concurrency=complete"
+      ],
+      "controls": "100 cancellation-after-attachment + 100 no-cancellation per revision/configuration; all pass",
+      "scope": "No full manager/view/URLSession cancellation reproduction; no claim original2398 revision reproduced",
+      "network_used_by_fixture": false
+    },
+    {
+      "case": "NIO3453/P01",
+      "level": "production state-machine ordered sequence + public writer cancellation; isolated test target",
+      "faulty_guarded_gap_trials": 100,
+      "fixed_guarded_gap_trials": 100,
+      "failures": 0,
+      "public_cancellation_trials_each": 100,
+      "public_cancellation_failures": 0,
+      "settings": "Swift 6 NIOCore production module",
+      "conclusion": "Reported causal interval not reproduced; existing second check under registration lock contradicts attributed source-level ordering. Root disputed, not proof no bug on historical runtime."
+    }
+  ],
+  "runs": [
+    {
+      "label": "nuke-faulty-run",
+      "module": "Nuke",
+      "revision": "be75e5ff30d50ed6b7ce3fff6839d9b490678d20",
+      "exit_code": 1,
+      "swift_versions": [
+        "6"
+      ],
+      "explicit_complete_flag": false,
+      "diagnostic_warning_lines": 0,
+      "compile_errors": [],
+      "test_summaries": [
+        "\udbc2\udc84  Test run with 2 tests in 1 suite failed after 0.078 seconds with 40 issues."
+      ],
+      "metadata": {
+        "exit_code": 1,
+        "timing_source": "initial invocation: test duration in log; exact whole-command start/end not captured"
+      },
+      "log_sha256": "63e4ec0ac45631251f9549676b0d9a3b8a0ccb52e3815377280034161e916368"
+    },
+    {
+      "label": "nuke-fixed",
+      "module": "Nuke",
+      "revision": "47bc90620d18f48e54668c26a34d0d14d554777a",
+      "exit_code": 0,
+      "swift_versions": [
+        "6"
+      ],
+      "explicit_complete_flag": false,
+      "diagnostic_warning_lines": 0,
+      "compile_errors": [],
+      "test_summaries": [
+        "\udbc4\udc5b  Test run with 2 tests in 1 suite passed after 0.042 seconds."
+      ],
+      "metadata": {
+        "command": [
+          "swift",
+          "test",
+          "--disable-sandbox",
+          "--package-path",
+          "/RESEARCH_ROOT/nuke",
+          "--cache-path",
+          "/RESEARCH_ROOT/cache",
+          "--filter",
+          "ResearchRepro",
+          "--jobs",
+          "4",
+          "-v"
+        ],
+        "started_utc": "2026-11-05T20:55:26.539084+00:00",
+        "production_revision": "47bc90620d18f48e54668c26a34d0d14d554777a",
+        "timed_out": false,
+        "exit_code": 0,
+        "elapsed_seconds": 11.304,
+        "ended_utc": "2026-11-05T20:55:37.842727+00:00"
+      },
+      "log_sha256": "206c3bab4e43f29dac337d5da739b7cfb00dc24d8840b0a65263c281d4bcf55a"
+    },
+    {
+      "label": "kingfisher-faulty-default-run",
+      "module": "Kingfisher",
+      "revision": "fcf02a9ab324e2a346aa5f82480d60e1c6a04448",
+      "exit_code": 1,
+      "swift_versions": [
+        "5"
+      ],
+      "explicit_complete_flag": false,
+      "diagnostic_warning_lines": 3,
+      "compile_errors": [],
+      "test_summaries": [
+        "\udbc2\udc84  Test run with 3 tests in 1 suite failed after 0.014 seconds with 100 issues."
+      ],
+      "metadata": {
+        "exit_code": 1,
+        "timing_source": "initial invocation: test duration in log; exact whole-command start/end not captured"
+      },
+      "log_sha256": "8417d7b7567de148e70c25f79496ed3d6a00e859e06ce090671d5090e6908f4d"
+    },
+    {
+      "label": "kingfisher-faulty-complete",
+      "module": "Kingfisher",
+      "revision": "fcf02a9ab324e2a346aa5f82480d60e1c6a04448",
+      "exit_code": 1,
+      "swift_versions": [
+        "5"
+      ],
+      "explicit_complete_flag": true,
+      "diagnostic_warning_lines": 0,
+      "compile_errors": [],
+      "test_summaries": [
+        "\udbc2\udc84  Test run with 3 tests in 1 suite failed after 0.008 seconds with 100 issues."
+      ],
+      "metadata": {
+        "command": [
+          "swift",
+          "test",
+          "--disable-sandbox",
+          "--package-path",
+          "/RESEARCH_ROOT/kingfisher",
+          "--cache-path",
+          "/RESEARCH_ROOT/cache",
+          "--filter",
+          "ResearchRepro",
+          "--jobs",
+          "4",
+          "-v",
+          "-Xswiftc",
+          "-DREPRO_FAULTY",
+          "-Xswiftc",
+          "-strict-concurrency=complete"
+        ],
+        "started_utc": "2026-11-05T20:55:26.539116+00:00",
+        "production_revision": "fcf02a9ab324e2a346aa5f82480d60e1c6a04448",
+        "timed_out": false,
+        "exit_code": 1,
+        "elapsed_seconds": 10.508,
+        "ended_utc": "2026-11-05T20:55:37.047350+00:00"
+      },
+      "log_sha256": "31c0e59557bcb352a65aa93df04e1d3c88737a28bbaa875ae18ba63bac1c7c7d"
+    },
+    {
+      "label": "kingfisher-fixed-default",
+      "module": "Kingfisher",
+      "revision": "77173fa007500c701392d8376a5fa43a4aee9990",
+      "exit_code": 0,
+      "swift_versions": [
+        "5"
+      ],
+      "explicit_complete_flag": false,
+      "diagnostic_warning_lines": 0,
+      "compile_errors": [],
+      "test_summaries": [
+        "\udbc4\udc5b  Test run with 3 tests in 1 suite passed after 0.001 seconds."
+      ],
+      "metadata": {
+        "command": [
+          "swift",
+          "test",
+          "--disable-sandbox",
+          "--package-path",
+          "/RESEARCH_ROOT/kingfisher",
+          "--cache-path",
+          "/RESEARCH_ROOT/cache",
+          "--filter",
+          "ResearchRepro",
+          "--jobs",
+          "4",
+          "-v"
+        ],
+        "started_utc": "2026-11-05T20:56:59.228718+00:00",
+        "production_revision": "77173fa007500c701392d8376a5fa43a4aee9990",
+        "timed_out": false,
+        "exit_code": 0,
+        "elapsed_seconds": 6.499,
+        "ended_utc": "2026-11-05T20:57:05.728086+00:00"
+      },
+      "log_sha256": "6ec9b1fdf31d729339ffe1bcef0c6f090965775adf4ca7c509c79061c67fdca5"
+    },
+    {
+      "label": "kingfisher-fixed-complete",
+      "module": "Kingfisher",
+      "revision": "77173fa007500c701392d8376a5fa43a4aee9990",
+      "exit_code": 0,
+      "swift_versions": [
+        "5"
+      ],
+      "explicit_complete_flag": true,
+      "diagnostic_warning_lines": 3,
+      "compile_errors": [],
+      "test_summaries": [
+        "\udbc4\udc5b  Test run with 3 tests in 1 suite passed after 0.003 seconds."
+      ],
+      "metadata": {
+        "command": [
+          "swift",
+          "test",
+          "--disable-sandbox",
+          "--package-path",
+          "/RESEARCH_ROOT/kingfisher",
+          "--cache-path",
+          "/RESEARCH_ROOT/cache",
+          "--filter",
+          "ResearchRepro",
+          "--jobs",
+          "4",
+          "-v",
+          "-Xswiftc",
+          "-strict-concurrency=complete"
+        ],
+        "started_utc": "2026-11-05T20:56:12.178801+00:00",
+        "production_revision": "77173fa007500c701392d8376a5fa43a4aee9990",
+        "timed_out": false,
+        "exit_code": 0,
+        "elapsed_seconds": 15.378,
+        "ended_utc": "2026-11-05T20:56:27.557381+00:00"
+      },
+      "log_sha256": "039ca5865a43a5ac0c51598676ff67d310e1f41ddf71f2512054c7dec3406d50"
+    },
+    {
+      "label": "nio-faulty-isolated",
+      "module": "NIOCore",
+      "revision": "5bf841dde54db41048f17a394061753d91fc889a",
+      "exit_code": 0,
+      "swift_versions": [
+        "6"
+      ],
+      "explicit_complete_flag": false,
+      "diagnostic_warning_lines": 1,
+      "compile_errors": [],
+      "test_summaries": [
+        "Executed 2 tests, with 0 failures (0 unexpected) in 0.007 (0.011) seconds"
+      ],
+      "metadata": {
+        "command": [
+          "swift",
+          "test",
+          "--disable-sandbox",
+          "--package-path",
+          "/RESEARCH_ROOT/nio",
+          "--cache-path",
+          "/RESEARCH_ROOT/cache",
+          "--filter",
+          "ResearchRepro",
+          "--jobs",
+          "4",
+          "-v"
+        ],
+        "started_utc": "2026-11-05T20:56:12.184595+00:00",
+        "production_revision": "5bf841dde54db41048f17a394061753d91fc889a",
+        "timed_out": false,
+        "exit_code": 0,
+        "elapsed_seconds": 18.693,
+        "ended_utc": "2026-11-05T20:56:30.877393+00:00"
+      },
+      "log_sha256": "638448e3dd1528310544320dbe1a22c64a72bac259b8924392347dcf7198285c"
+    },
+    {
+      "label": "nio-fixed-isolated",
+      "module": "NIOCore",
+      "revision": "d2feeaa3631561117aa5276a5166505fe5dcfab7",
+      "exit_code": 0,
+      "swift_versions": [
+        "6"
+      ],
+      "explicit_complete_flag": false,
+      "diagnostic_warning_lines": 58,
+      "compile_errors": [],
+      "test_summaries": [
+        "Executed 2 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds"
+      ],
+      "metadata": {
+        "command": [
+          "swift",
+          "test",
+          "--disable-sandbox",
+          "--package-path",
+          "/RESEARCH_ROOT/nio",
+          "--cache-path",
+          "/RESEARCH_ROOT/cache",
+          "--filter",
+          "ResearchRepro",
+          "--jobs",
+          "4",
+          "-v"
+        ],
+        "started_utc": "2026-11-05T20:56:59.228584+00:00",
+        "production_revision": "d2feeaa3631561117aa5276a5166505fe5dcfab7",
+        "timed_out": false,
+        "exit_code": 0,
+        "elapsed_seconds": 16.39,
+        "ended_utc": "2026-11-05T20:57:15.618304+00:00"
+      },
+      "log_sha256": "bbac07ad644ae63fb426896d0141eaea66ef5bc275e46d4b759b9b85dd651dea"
+    }
+  ],
+  "checkout_provenance": [
+    {
+      "repository": "nio",
+      "head": "d2feeaa3631561117aa5276a5166505fe5dcfab7",
+      "tracked_changes": [
+        "Package.swift"
+      ],
+      "production_sources_modified": false
+    },
+    {
+      "repository": "nuke",
+      "head": "47bc90620d18f48e54668c26a34d0d14d554777a",
+      "tracked_changes": [
+        "Package.swift"
+      ],
+      "production_sources_modified": false
+    },
+    {
+      "repository": "kingfisher",
+      "head": "77173fa007500c701392d8376a5fa43a4aee9990",
+      "tracked_changes": [
+        "Package@swift-5.9.swift"
+      ],
+      "production_sources_modified": false
+    }
+  ],
+  "scope": "No production-source instrumentation, no full upstream suites, no TSan run, no historical Swift toolchain run, no claim of global scheduler determinism",
+  "classification_change": {
+    "P01": "disputed-not-counted",
+    "qualifying_production_families": 29,
+    "disputed_production_candidates": 1,
+    "separate_runtime_families": 1
+  }
+}

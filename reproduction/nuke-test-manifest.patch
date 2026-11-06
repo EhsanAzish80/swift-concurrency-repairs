@@ -1,0 +1,10 @@
+diff --git a/Package.swift b/Package.swift
+index e36ed5d2..863c7d3d 100644
+--- a/Package.swift
++++ b/Package.swift
+@@ -23,3 +23,5 @@ let package = Package(
+         .target(name: "NukeExtensions", dependencies: ["Nuke"])
+     ]
+ )
++
++package.targets.append(.testTarget(name: "ResearchRepro", dependencies: ["Nuke"], path: "ResearchRepro"))

@@ -1,0 +1,508 @@
+warning: /USER_HOME/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /USER_HOME/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: 'kingfisher': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c -primary-file /RESEARCH_ROOT/kingfisher/Package@swift-5.9.swift -target arm64-apple-macosx14.0 -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/ManifestAPI -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -vfsoverlay /PRIVATE_TEMP -module-cache-path /RESEARCH_ROOT/module-cache -no-color-diagnostics -Xcc -fno-color-diagnostics -swift-version 5 -package-description-version 5.9.0 -new-driver-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-driver -empty-abi-descriptor -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -no-auto-bridging-header-chaining -module-name main -disable-clang-spi -target-sdk-version 27.2 -target-sdk-name macosx27.2 -external-plugin-path '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' -external-plugin-path '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/local/lib/swift/host/plugins#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -o /PRIVATE_TEMP
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang /PRIVATE_TEMP -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks --sysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk --target=arm64-apple-macosx14.0 -L /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift -rpath /usr/lib/swift -L /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/ManifestAPI -L /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -lPackageDescription -Xlinker -rpath -Xlinker /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/ManifestAPI -o /PRIVATE_TEMP
+Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)
+Target: arm64-apple-macosx14.0
+warning: 'kingfisher': found 1 file(s) which are unhandled; explicitly declare them as resources or exclude from the target
+    /RESEARCH_ROOT/kingfisher/Sources/Info.plist
+Building for debugging...
+Planning build
+Compute target dependency graph
+info: Building targets in dependency order
+info: Target dependency graph (5 targets)
+info: Target 'AllIncludingTests' in project 'Aggregate'
+info: ➜ Explicit dependency on target 'ResearchRepro-product' in project 'Kingfisher'
+info: ➜ Dependency on target 'ResearchRepro-product' in project 'Kingfisher' via transitive dependency through 'ResearchRepro-test-runner'
+info: ➜ Explicit dependency on target 'Kingfisher-product' in project 'Kingfisher'
+info: ➜ Explicit dependency on target 'Kingfisher' in project 'Kingfisher'
+info: ➜ Explicit dependency on target 'Kingfisher_Kingfisher' in project 'Kingfisher'
+info: Target 'Kingfisher-product' in project 'Kingfisher'
+info: ➜ Explicit dependency on target 'Kingfisher' in project 'Kingfisher'
+info: ➜ Explicit dependency on target 'Kingfisher_Kingfisher' in project 'Kingfisher'
+info: Target 'ResearchRepro-product' in project 'Kingfisher'
+info: ➜ Explicit dependency on target 'Kingfisher' in project 'Kingfisher'
+info: Target 'Kingfisher' in project 'Kingfisher'
+info: ➜ Explicit dependency on target 'Kingfisher_Kingfisher' in project 'Kingfisher'
+info: Target 'Kingfisher_Kingfisher' in project 'Kingfisher' (no dependencies)
+Gather provisioning inputs
+Planning complete
+[Pre-planning 1 / 124]
+Discovering version info for clang
+Discovering version info for swiftc
+Discovering version info for libtool
+Discovering version info for ld
+[Planning deferred tasks]
+Create build description
+Build description signature: 9a78fe9bd8a810088fd060de75a38d06
+Build description path: /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/XCBuildData/9a78fe9bd8a810088fd060de75a38d06.xcbuilddata
+Build stat cache for /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk
+    cd /RESEARCH_ROOT
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -o /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache
+
+Failed to create FS event stream. Considering the cache up-to-date.
+Planning Swift module Kingfisher (arm64)
+    cd /RESEARCH_ROOT
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name Kingfisher -Onone @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE -DXcode -strict-concurrency\=complete -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos12.0 -g -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/kingfisher/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name kingfisher -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+[2 / 6] Kingfisher
+Compile
+    cd /RESEARCH_ROOT
+    
+
+Emitting module for Kingfisher
+[3 / 7] Kingfisher
+Discovering Swift tasks after 'Emitting module for Kingfisher'
+Unblock downstream dependents of Kingfisher (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name Kingfisher -Onone @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE -DXcode -strict-concurrency\=complete -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos12.0 -g -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/kingfisher/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name kingfisher -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Copy Kingfisher.swiftsourceinfo (arm64)
+    cd /RESEARCH_ROOT/kingfisher
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.swiftsourceinfo /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/Kingfisher.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+Copy Kingfisher.abi.json (arm64)
+    cd /RESEARCH_ROOT/kingfisher
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.abi.json /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/Kingfisher.swiftmodule/arm64-apple-macos.abi.json
+
+Copy Kingfisher.swiftmodule (arm64)
+    cd /RESEARCH_ROOT/kingfisher
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.swiftmodule /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/Kingfisher.swiftmodule/arm64-apple-macos.swiftmodule
+
+Process empty-Kingfisher_Kingfisher.plist
+    cd /RESEARCH_ROOT/kingfisher
+    builtin-infoPlistUtility /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher_Kingfisher-b.build/empty-Kingfisher_Kingfisher.plist -producttype com.apple.product-type.bundle -expandbuildsettings -platform macosx -o /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/Kingfisher_Kingfisher.bundle/Contents/Info.plist
+
+Compile ImageDataProvider.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageDataProvider.swift
+
+Compile LivePhotoSource.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile LivePhotoSource.swift
+
+Compile PHPickerResultImageDataProvider.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile PHPickerResultImageDataProvider.swift
+
+Compile PhotosPickerItemImageDataProvider.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile PhotosPickerItemImageDataProvider.swift
+
+Compile Resource.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Resource.swift
+
+Compile Source.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Source.swift
+
+Compile KF.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile KF.swift
+
+Compiling ImageDataProvider.swift, LivePhotoSource.swift, PHPickerResultImageDataProvider.swift, PhotosPickerItemImageDataProvider.swift, Resource.swift, Source.swift, KF.swift
+[13 / 23] Kingfisher
+Discovering Swift tasks after 'Compiling ImageDataProvider.swift, LivePhotoSource.swift, PHPickerResultImageDataProvider.swift, PhotosPickerItemImageDataProvider.swift, Resource.swift, Source.swift, KF.swift'
+Compile ImageTransition.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageTransition.swift
+
+Compile Placeholder.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Placeholder.swift
+
+Compile AuthenticationChallengeResponsable.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile AuthenticationChallengeResponsable.swift
+
+Compile ImageDataProcessor.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageDataProcessor.swift
+
+Compile ImageDownloader+LivePhoto.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageDownloader+LivePhoto.swift
+
+Compile ImageDownloader.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageDownloader.swift
+
+Compile ImageDownloaderDelegate.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageDownloaderDelegate.swift
+
+Compiling ImageTransition.swift, Placeholder.swift, AuthenticationChallengeResponsable.swift, ImageDataProcessor.swift, ImageDownloader+LivePhoto.swift, ImageDownloader.swift, ImageDownloaderDelegate.swift
+[14 / 23] Kingfisher
+Compile HasImageComponent+Kingfisher.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile HasImageComponent+Kingfisher.swift
+
+Compile ImageView+Kingfisher.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageView+Kingfisher.swift
+
+Compile NSButton+Kingfisher.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile NSButton+Kingfisher.swift
+
+Compile NSTextAttachment+Kingfisher.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile NSTextAttachment+Kingfisher.swift
+
+Compile PHLivePhotoView+Kingfisher.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile PHLivePhotoView+Kingfisher.swift
+
+Compile UIButton+Kingfisher.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile UIButton+Kingfisher.swift
+
+Compile AVAssetImageDataProvider.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile AVAssetImageDataProvider.swift
+
+Compiling HasImageComponent+Kingfisher.swift, ImageView+Kingfisher.swift, NSButton+Kingfisher.swift, NSTextAttachment+Kingfisher.swift, PHLivePhotoView+Kingfisher.swift, UIButton+Kingfisher.swift, AVAssetImageDataProvider.swift
+/RESEARCH_ROOT/kingfisher/Sources/General/ImageSource/AVAssetImageDataProvider.swift:146:79: warning: 'kUTTypeJPEG' was deprecated in macOS 12.0: Use UTTypeJPEG or UTType.jpeg (swift) instead. [#DeprecatedDeclaration]
+144 |         }
+145 | #else
+146 |         guard let destination = CGImageDestinationCreateWithData(mutableData, kUTTypeJPEG, 1, nil) else {
+    |                                                                               `- warning: 'kUTTypeJPEG' was deprecated in macOS 12.0: Use UTTypeJPEG or UTType.jpeg (swift) instead. [#DeprecatedDeclaration]
+147 |             return nil
+148 |         }
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
+Discovering Swift tasks after 'Compiling ImageTransition.swift, Placeholder.swift, AuthenticationChallengeResponsable.swift, ImageDataProcessor.swift, ImageDownloader+LivePhoto.swift, ImageDownloader.swift, ImageDownloaderDelegate.swift'
+Discovering Swift tasks after 'Compiling HasImageComponent+Kingfisher.swift, ImageView+Kingfisher.swift, NSButton+Kingfisher.swift, NSTextAttachment+Kingfisher.swift, PHLivePhotoView+Kingfisher.swift, UIButton+Kingfisher.swift, AVAssetImageDataProvider.swift'
+Compile resource_bundle_accessor.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile resource_bundle_accessor.swift
+
+Compile CacheSerializer.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile CacheSerializer.swift
+
+Compile DiskStorage.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile DiskStorage.swift
+
+Compile FormatIndicatedCacheSerializer.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile FormatIndicatedCacheSerializer.swift
+
+Compile ImageCache.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageCache.swift
+
+Compile MemoryStorage.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile MemoryStorage.swift
+
+Compile Storage.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Storage.swift
+
+Compile CPListItem+Kingfisher.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile CPListItem+Kingfisher.swift
+
+Compiling resource_bundle_accessor.swift, CacheSerializer.swift, DiskStorage.swift, FormatIndicatedCacheSerializer.swift, ImageCache.swift, MemoryStorage.swift, Storage.swift, CPListItem+Kingfisher.swift
+[16 / 23] Kingfisher
+Discovering Swift tasks after 'Compiling resource_bundle_accessor.swift, CacheSerializer.swift, DiskStorage.swift, FormatIndicatedCacheSerializer.swift, ImageCache.swift, MemoryStorage.swift, Storage.swift, CPListItem+Kingfisher.swift'
+Compile ExtensionHelpers.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ExtensionHelpers.swift
+
+Compile Result.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Result.swift
+
+Compile Runtime.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Runtime.swift
+
+Compile SizeExtensions.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile SizeExtensions.swift
+
+Compile String+SHA256.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile String+SHA256.swift
+
+Compile AnimatedImageView.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile AnimatedImageView.swift
+
+Compile Indicator.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Indicator.swift
+
+Compiling ExtensionHelpers.swift, Result.swift, Runtime.swift, SizeExtensions.swift, String+SHA256.swift, AnimatedImageView.swift, Indicator.swift
+[17 / 23] Kingfisher
+Discovering Swift tasks after 'Compiling ExtensionHelpers.swift, Result.swift, Runtime.swift, SizeExtensions.swift, String+SHA256.swift, AnimatedImageView.swift, Indicator.swift'
+Compile GIFAnimatedImage.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile GIFAnimatedImage.swift
+
+Compile GraphicsContext.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile GraphicsContext.swift
+
+Compile Image.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Image.swift
+
+Compile ImageDrawing.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageDrawing.swift
+
+Compile ImageFormat.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageFormat.swift
+
+Compile ImageProcessor.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageProcessor.swift
+
+Compile ImageProgressive.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageProgressive.swift
+
+Compiling GIFAnimatedImage.swift, GraphicsContext.swift, Image.swift, ImageDrawing.swift, ImageFormat.swift, ImageProcessor.swift, ImageProgressive.swift
+[18 / 23] Kingfisher
+/RESEARCH_ROOT/kingfisher/Sources/Image/Image.swift:348:57: warning: 'kUTTypeGIF' was deprecated in macOS 12.0: Use UTTypeGIF or UTType.gif (swift) instead. [#DeprecatedDeclaration]
+346 |         let info: [String: Any] = [
+347 |             kCGImageSourceShouldCache as String: true,
+348 |             kCGImageSourceTypeIdentifierHint as String: kUTTypeGIF
+    |                                                         `- warning: 'kUTTypeGIF' was deprecated in macOS 12.0: Use UTTypeGIF or UTType.gif (swift) instead. [#DeprecatedDeclaration]
+349 |         ]
+350 |         #endif
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
+Discovering Swift tasks after 'Compiling GIFAnimatedImage.swift, GraphicsContext.swift, Image.swift, ImageDrawing.swift, ImageFormat.swift, ImageProcessor.swift, ImageProgressive.swift'
+Compile SessionDataTask.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile SessionDataTask.swift
+
+Compile SessionDelegate.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile SessionDelegate.swift
+
+Compile ImageBinder.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageBinder.swift
+
+Compile ImageContext.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageContext.swift
+
+Compile KFAnimatedImage.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile KFAnimatedImage.swift
+
+Compile KFImage.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile KFImage.swift
+
+Compile KFImageOptions.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile KFImageOptions.swift
+
+Compiling SessionDataTask.swift, SessionDelegate.swift, ImageBinder.swift, ImageContext.swift, KFAnimatedImage.swift, KFImage.swift, KFImageOptions.swift
+Discovering Swift tasks after 'Compiling SessionDataTask.swift, SessionDelegate.swift, ImageBinder.swift, ImageContext.swift, KFAnimatedImage.swift, KFImage.swift, KFImageOptions.swift'
+Compile KFOptionsSetter.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile KFOptionsSetter.swift
+
+Compile Kingfisher.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Kingfisher.swift
+
+Compile KingfisherError.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile KingfisherError.swift
+
+Compile KingfisherManager+LivePhoto.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile KingfisherManager+LivePhoto.swift
+
+Compile KingfisherManager.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile KingfisherManager.swift
+
+Compile KingfisherOptionsInfo.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile KingfisherOptionsInfo.swift
+
+Compile Filter.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Filter.swift
+
+Compiling KFOptionsSetter.swift, Kingfisher.swift, KingfisherError.swift, KingfisherManager+LivePhoto.swift, KingfisherManager.swift, KingfisherOptionsInfo.swift, Filter.swift
+/RESEARCH_ROOT/kingfisher/Sources/General/KingfisherManager.swift:875:53: warning: 'weak' ownership of capture 'self' differs from implicitly-captured strong reference in outer scope [#ImplicitStrongCapture]
+ 859 |                 forcedExtension: options.forcedExtension,
+ 860 |                 callbackQueue: .untouch
+ 861 |             ) { originalImageCacheType in
+     |               |- note: 'self' implicitly strongly captured here
+     |               `- note: add 'self' as a capture list item to silence
+ 862 |                 let canAcceptDiskCache = !options.fromMemoryCacheOrRefresh
+ 863 |                 let canUseOriginalImageCache =
+     :
+ 873 |                         context: context,
+ 874 |                         options: options,
+ 875 |                         fallbackToDownload: { [weak self] in
+     |                                                     |- warning: 'weak' ownership of capture 'self' differs from implicitly-captured strong reference in outer scope [#ImplicitStrongCapture]
+     |                                                     `- note: explicitly assign the capture list item to silence
+ 876 |                             guard let self else { return }
+ 877 |                             _ = self.loadAndCacheImage(
+
+[#ImplicitStrongCapture]: <https://docs.swift.org/compiler/documentation/diagnostics/implicit-strong-capture>
+Discovering Swift tasks after 'Compiling KFOptionsSetter.swift, Kingfisher.swift, KingfisherError.swift, KingfisherManager+LivePhoto.swift, KingfisherManager.swift, KingfisherOptionsInfo.swift, Filter.swift'
+Compile KFImageProtocol.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile KFImageProtocol.swift
+
+Compile KFImageRenderer.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile KFImageRenderer.swift
+
+Compile Box.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Box.swift
+
+Compile CallbackQueue.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile CallbackQueue.swift
+
+Compile CancellationToken.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile CancellationToken.swift
+
+Compile Delegate.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Delegate.swift
+
+Compile DisplayLink.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile DisplayLink.swift
+
+Compiling KFImageProtocol.swift, KFImageRenderer.swift, Box.swift, CallbackQueue.swift, CancellationToken.swift, Delegate.swift, DisplayLink.swift
+Discovering Swift tasks after 'Compiling KFImageProtocol.swift, KFImageRenderer.swift, Box.swift, CallbackQueue.swift, CancellationToken.swift, Delegate.swift, DisplayLink.swift'
+Compile ImageModifier.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageModifier.swift
+
+Compile ImagePrefetcher.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImagePrefetcher.swift
+
+Compile NetworkMetrics.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile NetworkMetrics.swift
+
+Compile NetworkMonitor.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile NetworkMonitor.swift
+
+Compile RedirectHandler.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile RedirectHandler.swift
+
+Compile RequestModifier.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile RequestModifier.swift
+
+Compile RetryStrategy.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile RetryStrategy.swift
+
+Compiling ImageModifier.swift, ImagePrefetcher.swift, NetworkMetrics.swift, NetworkMonitor.swift, RedirectHandler.swift, RequestModifier.swift, RetryStrategy.swift
+Discovering Swift tasks after 'Compiling ImageModifier.swift, ImagePrefetcher.swift, NetworkMetrics.swift, NetworkMonitor.swift, RedirectHandler.swift, RequestModifier.swift, RetryStrategy.swift'
+Compile Kingfisher (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name Kingfisher -Onone @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE -DXcode -strict-concurrency\=complete -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos12.0 -g -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/kingfisher/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name kingfisher -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Link Kingfisher.o (arm64)
+    cd /RESEARCH_ROOT/kingfisher
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos12.0 -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -F/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/EagerLinkingTBDs/Debug -F/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -filelist /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher_lto.o -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-t.build/Objects-normal/arm64/Kingfisher.swiftmodule -o /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/Kingfisher.o
+
+Process empty-ResearchRepro.plist
+    cd /RESEARCH_ROOT/kingfisher
+    builtin-infoPlistUtility /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/empty-ResearchRepro.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -platform macosx -scanforprivacyfile /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Resources/Kingfisher_Kingfisher.bundle -o /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Info.plist
+
+Planning Swift module ResearchRepro (arm64)
+    cd /RESEARCH_ROOT
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name ResearchRepro -Onone @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -strict-concurrency\=complete -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos14.0 -g -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/kingfisher/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name kingfisher -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+[22 / 24] ResearchRepro-product
+Compile test_entry_point.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile test_entry_point.swift
+
+Compiling test_entry_point.swift
+[25 / 27] ResearchRepro-product
+Discovering Swift tasks after 'Compiling test_entry_point.swift'
+Compile
+    cd /RESEARCH_ROOT
+    
+
+Emitting module for ResearchRepro
+Compile ResearchRepro.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ResearchRepro.swift
+
+Compiling ResearchRepro.swift
+Discovering Swift tasks after 'Compiling ResearchRepro.swift'
+Compile ResearchRepro (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name ResearchRepro -Onone @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -strict-concurrency\=complete -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos14.0 -g -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/kingfisher/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name kingfisher -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Discovering Swift tasks after 'Emitting module for ResearchRepro'
+Unblock downstream dependents of ResearchRepro (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name ResearchRepro -Onone @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -strict-concurrency\=complete -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos14.0 -g -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/kingfisher/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/kingfisher/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/kingfisher/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name kingfisher -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Copy ResearchRepro.abi.json (arm64)
+    cd /RESEARCH_ROOT/kingfisher
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.abi.json /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.swiftmodule/arm64-apple-macos.abi.json
+
+Link ResearchRepro (arm64)
+    cd /RESEARCH_ROOT/kingfisher
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -Xlinker -reproducible -target arm64-apple-macos14.0 -Xlinker -bundle -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -Xlinker -no_warn_duplicate_libraries -L/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/EagerLinkingTBDs/Debug -L/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/EagerLinkingTBDs/Debug -F/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/PackageFrameworks -F/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -Fsystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks @/RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/PackageFrameworks -Xlinker -rpath -Xlinker @loader_path/../../.. -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @loader_path/../Frameworks -Xlinker -rpath -Xlinker /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_lto.o -Xclang-linker -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_dependency_info.dat -link-objc-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftmodule -strict-concurrency\=complete -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -Xlinker -no_adhoc_codesign -o /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/MacOS/ResearchRepro -no-stdlib-rpath
+
+[29 / 30] ResearchRepro-product
+Copy Swift standard libraries into ResearchRepro.xctest
+    cd /RESEARCH_ROOT/kingfisher
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/MacOS/ResearchRepro --scan-folder /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Frameworks --scan-folder /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/PlugIns --scan-folder /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Library/SystemExtensions --scan-folder /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Extensions --platform macosx --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+
+Sign ResearchRepro.xctest
+    cd /RESEARCH_ROOT/kingfisher
+    
+    Signing Identity:     "-"
+    
+    /usr/bin/codesign --force --sign - --entitlements /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/ResearchRepro-p.build/ResearchRepro.xctest.xcent --timestamp\=none --generate-entitlement-der --strip-disallowed-xattrs /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/ResearchRepro.xctest
+
+[31 / 31] ResearchRepro-product
+Create static library libKingfisher.a (arm64)
+    cd /RESEARCH_ROOT/kingfisher
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -L/RESEARCH_ROOT/kingfisher/.build/out/Products/Debug -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -filelist /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-product-p.build/Objects-normal/arm64/Kingfisher.LinkFileList -no_warning_for_no_symbols -dependency_info /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/Kingfisher.build/Debug/Kingfisher-product-p.build/Objects-normal/arm64/Kingfisher_libtool_dependency_info.dat -o /RESEARCH_ROOT/kingfisher/.build/out/Products/Debug/libKingfisher.a
+
+Prune stale explicit modules at /RESEARCH_ROOT/kingfisher/.build/out/SDKExplicitPrecompiledModules
+Prune stale explicit modules at /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules
+Prune stale explicit modules at /RESEARCH_ROOT/kingfisher/.build/out/Intermediates.noindex/ExplicitPrecompiledModules
+Build complete! (10,52 sec)
+􀟈  Test run started.
+􀄵  Swift Standard Library Version: 6.4
+􀄵  Swift Compiler Version: 6.4.2
+􀄵  Testing Library Version: 2403
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀄵  OS Version: 27.2 (26B123)
+􀟈  Suite ResearchRepro started.
+􀟈  Test cancellationBeforeAttachmentIsRemembered() started.
+􁁛  Test cancellationBeforeAttachmentIsRemembered() passed after 0.001 seconds.
+􀟈  Test cancellationAfterAttachmentControl() started.
+􁁛  Test cancellationAfterAttachmentControl() passed after 0.001 seconds.
+􀟈  Test noCancellationControl() started.
+􁁛  Test noCancellationControl() passed after 0.001 seconds.
+􁁛  Suite ResearchRepro passed after 0.003 seconds.
+􁁛  Test run with 3 tests in 1 suite passed after 0.003 seconds.

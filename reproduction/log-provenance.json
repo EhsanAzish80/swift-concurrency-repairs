@@ -1,0 +1,50 @@
+[
+  {
+    "file": "reproduction/logs/nuke-faulty-run.log",
+    "raw_log_sha256": "63e4ec0ac45631251f9549676b0d9a3b8a0ccb52e3815377280034161e916368",
+    "sanitized_log_sha256": "73a56303675f55efa363d051d71756ae82d832f4ea0882fb472e93752aed0fc8",
+    "transform": "Research root/user-home paths replaced; per-user temp paths replaced. Compiler/test text otherwise retained."
+  },
+  {
+    "file": "reproduction/logs/nuke-fixed.log",
+    "raw_log_sha256": "206c3bab4e43f29dac337d5da739b7cfb00dc24d8840b0a65263c281d4bcf55a",
+    "sanitized_log_sha256": "19db2d742f4b53b8235135ff0c5e859a63152d1ee91dcfd90bf8a9bcc0d9a6e1",
+    "transform": "Research root/user-home paths replaced; per-user temp paths replaced. Compiler/test text otherwise retained."
+  },
+  {
+    "file": "reproduction/logs/kingfisher-faulty-default-run.log",
+    "raw_log_sha256": "8417d7b7567de148e70c25f79496ed3d6a00e859e06ce090671d5090e6908f4d",
+    "sanitized_log_sha256": "8c2b3cdf06a7b829a815a00925e764895eaec08357b115496633733d08dd7455",
+    "transform": "Research root/user-home paths replaced; per-user temp paths replaced. Compiler/test text otherwise retained."
+  },
+  {
+    "file": "reproduction/logs/kingfisher-faulty-complete.log",
+    "raw_log_sha256": "31c0e59557bcb352a65aa93df04e1d3c88737a28bbaa875ae18ba63bac1c7c7d",
+    "sanitized_log_sha256": "762f2d8f8583264373d81ff5f3631b80a23a514fa7fc0342d2c3718059ac146f",
+    "transform": "Research root/user-home paths replaced; per-user temp paths replaced. Compiler/test text otherwise retained."
+  },
+  {
+    "file": "reproduction/logs/kingfisher-fixed-default.log",
+    "raw_log_sha256": "6ec9b1fdf31d729339ffe1bcef0c6f090965775adf4ca7c509c79061c67fdca5",
+    "sanitized_log_sha256": "66d59a3ec3be90fd15c37545fd7b79dc458e7dd28371cf414b780f4dddeffd9f",
+    "transform": "Research root/user-home paths replaced; per-user temp paths replaced. Compiler/test text otherwise retained."
+  },
+  {
+    "file": "reproduction/logs/kingfisher-fixed-complete.log",
+    "raw_log_sha256": "039ca5865a43a5ac0c51598676ff67d310e1f41ddf71f2512054c7dec3406d50",
+    "sanitized_log_sha256": "628ac120d060006dbfe8415e5c640644268d9eb586ca0d49188ab482dd80345a",
+    "transform": "Research root/user-home paths replaced; per-user temp paths replaced. Compiler/test text otherwise retained."
+  },
+  {
+    "file": "reproduction/logs/nio-faulty-isolated.log",
+    "raw_log_sha256": "638448e3dd1528310544320dbe1a22c64a72bac259b8924392347dcf7198285c",
+    "sanitized_log_sha256": "3378924cbd637bf473df15ea6ecf977584219bba7bec09341ceacdf4dddb33af",
+    "transform": "Research root/user-home paths replaced; per-user temp paths replaced. Compiler/test text otherwise retained."
+  },
+  {
+    "file": "reproduction/logs/nio-fixed-isolated.log",
+    "raw_log_sha256": "bbac07ad644ae63fb426896d0141eaea66ef5bc275e46d4b759b9b85dd651dea",
+    "sanitized_log_sha256": "b2a1d07e6751378278b0924ca38888122a006c7238a3a28f390a2ac258262f28",
+    "transform": "Research root/user-home paths replaced; per-user temp paths replaced. Compiler/test text otherwise retained."
+  }
+]

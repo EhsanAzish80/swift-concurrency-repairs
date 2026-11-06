@@ -1,0 +1,1188 @@
+warning: /USER_HOME/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /USER_HOME/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: 'nuke': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c -primary-file /RESEARCH_ROOT/nuke/Package.swift -target arm64-apple-macosx14.0 -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -I /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/ManifestAPI -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -vfsoverlay /PRIVATE_TEMP -module-cache-path /RESEARCH_ROOT/module-cache -no-color-diagnostics -Xcc -fno-color-diagnostics -swift-version 6 -package-description-version 6.0.0 -new-driver-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-driver -empty-abi-descriptor -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -no-auto-bridging-header-chaining -module-name main -disable-clang-spi -target-sdk-version 27.2 -target-sdk-name macosx27.2 -external-plugin-path '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' -external-plugin-path '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/local/lib/swift/host/plugins#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -o /PRIVATE_TEMP
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang /PRIVATE_TEMP -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks --sysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk --target=arm64-apple-macosx14.0 -L /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk/usr/lib/swift -rpath /usr/lib/swift -L /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/ManifestAPI -L /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -lPackageDescription -Xlinker -rpath -Xlinker /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/ManifestAPI -o /PRIVATE_TEMP
+Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)
+Target: arm64-apple-macosx14.0
+Building for debugging...
+Planning build
+[Computing dependencies]
+Compute target dependency graph
+info: Building targets in dependency order
+info: Target dependency graph (10 targets)
+info: Target 'AllIncludingTests' in project 'Aggregate'
+info: ➜ Explicit dependency on target 'ResearchRepro-product' in project 'Nuke'
+info: ➜ Dependency on target 'ResearchRepro-product' in project 'Nuke' via transitive dependency through 'ResearchRepro-test-runner'
+info: ➜ Explicit dependency on target 'Nuke-product' in project 'Nuke'
+info: ➜ Explicit dependency on target 'NukeUI-product' in project 'Nuke'
+info: ➜ Explicit dependency on target 'NukeVideo-product' in project 'Nuke'
+info: ➜ Explicit dependency on target 'NukeExtensions-product' in project 'Nuke'
+info: ➜ Explicit dependency on target 'Nuke' in project 'Nuke'
+info: ➜ Explicit dependency on target 'NukeUI' in project 'Nuke'
+info: ➜ Explicit dependency on target 'NukeVideo' in project 'Nuke'
+info: ➜ Explicit dependency on target 'NukeExtensions' in project 'Nuke'
+info: Target 'NukeExtensions-product' in project 'Nuke'
+info: ➜ Explicit dependency on target 'NukeExtensions' in project 'Nuke'
+info: ➜ Explicit dependency on target 'Nuke' in project 'Nuke'
+info: Target 'NukeExtensions' in project 'Nuke'
+info: ➜ Explicit dependency on target 'Nuke' in project 'Nuke'
+info: Target 'NukeVideo-product' in project 'Nuke'
+info: ➜ Explicit dependency on target 'NukeVideo' in project 'Nuke'
+info: ➜ Explicit dependency on target 'Nuke' in project 'Nuke'
+info: Target 'NukeVideo' in project 'Nuke'
+info: ➜ Explicit dependency on target 'Nuke' in project 'Nuke'
+info: Target 'NukeUI-product' in project 'Nuke'
+info: ➜ Explicit dependency on target 'NukeUI' in project 'Nuke'
+info: ➜ Explicit dependency on target 'Nuke' in project 'Nuke'
+info: Target 'NukeUI' in project 'Nuke'
+info: ➜ Explicit dependency on target 'Nuke' in project 'Nuke'
+info: Target 'Nuke-product' in project 'Nuke'
+info: ➜ Explicit dependency on target 'Nuke' in project 'Nuke'
+info: Target 'ResearchRepro-product' in project 'Nuke'
+info: ➜ Explicit dependency on target 'Nuke' in project 'Nuke'
+info: Target 'Nuke' in project 'Nuke' (no dependencies)
+Gather provisioning inputs
+Planning complete
+[Planning 35 / 269]
+Discovering version info for clang
+Discovering version info for swiftc
+Discovering version info for libtool
+Discovering version info for ld
+[Planning deferred tasks]
+Create build description
+Build description signature: 2aea4248a46fd99161fb1c90df06697b
+Build description path: /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/XCBuildData/2aea4248a46fd99161fb1c90df06697b.xcbuilddata
+Create build directory $(DERIVED_DATA_DIR)/ModuleCache.noindex
+    cd /RESEARCH_ROOT
+    builtin-create-build-directory /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex
+
+Create build directory $(TARGET_BUILD_DIR)
+    cd /RESEARCH_ROOT
+    builtin-create-build-directory /RESEARCH_ROOT/nuke/.build/out/Products
+
+Create build directory $(DERIVED_DATA_DIR)/SDKExplicitPrecompiledModules
+    cd /RESEARCH_ROOT
+    builtin-create-build-directory /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules
+
+Create build directory $(DERIVED_DATA_DIR)/PCH
+    cd /RESEARCH_ROOT
+    builtin-create-build-directory /RESEARCH_ROOT/nuke/.build/out/PCH
+
+Create build directory $(OBJROOT)
+    cd /RESEARCH_ROOT
+    builtin-create-build-directory /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex
+
+Create build directory $(DERIVED_DATA_DIR)/CompilationCache.noindex
+    cd /RESEARCH_ROOT
+    builtin-create-build-directory /RESEARCH_ROOT/nuke/.build/out/CompilationCache.noindex
+
+Create build directory $(TARGET_BUILD_DIR)/Debug
+    cd /RESEARCH_ROOT
+    builtin-create-build-directory /RESEARCH_ROOT/nuke/.build/out/Products/Debug
+
+Create build directory $(OBJROOT)/SwiftExplicitPrecompiledModules
+    cd /RESEARCH_ROOT
+    builtin-create-build-directory /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+Create build directory $(OBJROOT)/ExplicitPrecompiledModules
+    cd /RESEARCH_ROOT
+    builtin-create-build-directory /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/ExplicitPrecompiledModules
+
+Create build directory $(TARGET_BUILD_DIR)/Debug/PackageFrameworks
+    cd /RESEARCH_ROOT
+    builtin-create-build-directory /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks
+
+Create build directory $(OBJROOT)/EagerLinkingTBDs/Debug
+    cd /RESEARCH_ROOT
+    builtin-create-build-directory /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/EagerLinkingTBDs/Debug
+
+Write empty-ResearchRepro.plist
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/empty-ResearchRepro.plist
+
+Write ResearchRepro_const_extract_protocols.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_const_extract_protocols.json
+
+Write ResearchRepro.SwiftFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.SwiftFileList
+
+Write ResearchRepro.LinkFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.LinkFileList
+
+Write ResearchRepro-OutputFileMap.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-OutputFileMap.json
+
+Write Entitlements.plist
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/DerivedSources/Entitlements.plist
+
+Write NukeVideo.LinkFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-product-p.build/Objects-normal/arm64/NukeVideo.LinkFileList
+
+Write NukeVideo_const_extract_protocols.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo_const_extract_protocols.json
+
+Write NukeVideo.SwiftFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.SwiftFileList
+
+Write NukeVideo.LinkFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.LinkFileList
+
+Write NukeVideo-OutputFileMap.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo-OutputFileMap.json
+
+Write NukeVideo.modulemap
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/NukeVideo.modulemap
+
+Write NukeUI.LinkFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-product-p.build/Objects-normal/arm64/NukeUI.LinkFileList
+
+Write NukeUI_const_extract_protocols.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI_const_extract_protocols.json
+
+Write NukeUI.SwiftFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.SwiftFileList
+
+Write NukeUI.LinkFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.LinkFileList
+
+Write NukeUI-OutputFileMap.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI-OutputFileMap.json
+
+Write NukeUI.modulemap
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/NukeUI.modulemap
+
+Create directory MacOS
+    cd /RESEARCH_ROOT/nuke
+    /bin/mkdir -p /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest/Contents/MacOS
+
+Copy NukeVideo.modulemap
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/NukeVideo.modulemap /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/GeneratedModuleMaps
+
+Create directory Contents
+    cd /RESEARCH_ROOT/nuke
+    /bin/mkdir -p /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest/Contents
+
+Create directory ResearchRepro.xctest
+    cd /RESEARCH_ROOT/nuke
+    /bin/mkdir -p /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest
+
+Write NukeExtensions.LinkFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-product-p.build/Objects-normal/arm64/NukeExtensions.LinkFileList
+
+Copy NukeUI.modulemap
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/NukeUI.modulemap /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/GeneratedModuleMaps
+
+Write NukeExtensions_const_extract_protocols.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions_const_extract_protocols.json
+
+Write NukeExtensions.SwiftFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.SwiftFileList
+
+Write NukeExtensions.LinkFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.LinkFileList
+
+Write NukeExtensions-OutputFileMap.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions-OutputFileMap.json
+
+Write NukeExtensions.modulemap
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/NukeExtensions.modulemap
+
+Write Nuke.LinkFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-product-p.build/Objects-normal/arm64/Nuke.LinkFileList
+
+Write Nuke.SwiftFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.SwiftFileList
+
+Write Nuke_const_extract_protocols.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke_const_extract_protocols.json
+
+Write Nuke.LinkFileList (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.LinkFileList
+
+Write Nuke-OutputFileMap.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke-OutputFileMap.json
+
+[48 / 100] Nuke
+Write Nuke.modulemap
+    cd /RESEARCH_ROOT/nuke
+    write-file /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Nuke.modulemap
+
+Copy NukeExtensions.modulemap
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/NukeExtensions.modulemap /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/GeneratedModuleMaps
+
+Copy Nuke.modulemap
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Nuke.modulemap /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/GeneratedModuleMaps
+
+Build stat cache for /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk
+    cd /RESEARCH_ROOT
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -o /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache
+
+[49 / 100]
+Planning Swift module Nuke (arm64)
+    cd /RESEARCH_ROOT
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name Nuke -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos13.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+[50 / 101] Nuke
+Compiling Clang module _Builtin_stdarg
+[55 / 188]
+Compiling Clang module ptrauth
+Compiling Clang module _AvailabilityInternal
+Compiling Clang module SwiftShims
+Compiling Clang module ptrcheck
+[59 / 188]
+Compiling Clang module DeveloperToolsSupport
+Compiling Clang module _Builtin_stdbool
+Compiling Clang module _Builtin_stddef
+Compiling Clang module _SwiftConcurrencyShims
+[60 / 188]
+Compiling Clang module _Builtin_float
+Compiling Clang module _DarwinFoundation1
+[61 / 188]
+Compiling Clang module _Builtin_limits
+[63 / 188]
+Compiling Clang module _DarwinFoundation2
+Compiling Clang module sys_types
+[67 / 188]
+Compiling Clang module _Builtin_stdint
+Compiling Clang module _Builtin_tgmath
+Compiling Clang module string_h
+Compiling Clang module libDER
+[71 / 188]
+Compiling Clang module _Builtin_stdatomic
+Compiling Clang module _Builtin_intrinsics
+Compiling Clang module _DarwinFoundation3
+Compiling Clang module _Builtin_inttypes
+[73 / 188]
+Compiling Clang module simd
+[74 / 188]
+Compiling Clang module Spatial
+[75 / 188]
+Compiling Clang module Darwin
+Compiling Clang module libkern
+[79 / 188]
+Compiling Clang module launch
+Compiling Clang module MachO
+Compiling Clang module CUPS
+Compiling Clang module ObjectiveC
+[80 / 188]
+Compiling Clang module os_object
+[81 / 188]
+Compiling Clang module os_workgroup
+[82 / 188]
+Compiling Clang module Dispatch
+[83 / 188]
+Compiling Clang module XPC
+[85 / 188]
+Compiling Clang module CoreFoundation
+Compiling Clang module os
+[90 / 188]
+Compiling Clang module CoreAudioTypes
+Compiling Clang module ColorSync
+Compiling Clang module CFNetwork
+[91 / 188]
+Compiling Clang module IOKit
+Compiling Clang module Security
+Compiling Clang module DiskArbitration
+[93 / 188]
+Compiling Clang module CoreGraphics
+Compiling Clang module ImageIO
+[96 / 188]
+Compiling Clang module CoreText
+Compiling Clang module CoreServices
+Compiling Clang module Foundation
+[97 / 188]
+Compiling Clang module DataDetection
+[102 / 188]
+Compiling Clang module LocalAuthentication
+Compiling Clang module CoreMIDI
+Compiling Clang module CoreData
+Compiling Clang module Symbols
+[106 / 188]
+Compiling Clang module CoreAudio
+Compiling Clang module UniformTypeIdentifiers
+Compiling Clang module ApplicationServices
+[109 / 188]
+Compiling Clang module IOSurface
+Compiling Clang module Accessibility
+Compiling Clang module OSLog
+Compiling Clang module CoreTransferable
+[112 / 188]
+Compiling Clang module OpenGL
+Compiling Clang module Carbon
+Compiling Clang module Metal
+[113 / 188]
+Compiling Clang module CoreVideo
+[114 / 188]
+Compiling Clang module AudioToolbox
+Compiling Clang module CoreImage
+[118 / 188]
+Compiling Clang module CoreMedia
+Compiling Clang module QuartzCore
+Compiling Clang module MediaToolbox
+[122 / 188]
+Compiling Clang module VideoToolbox
+Compiling Clang module AVFAudio
+[123 / 188]
+Compiling Clang module SwiftUICore
+Compiling Clang module Accelerate
+[124 / 188]
+Compiling Clang module AVFoundation
+Compiling Clang module AppKit
+Compiling Clang module Cocoa
+[125 / 188]
+Compiling Clang module AVKit
+[126 / 188]
+Compile
+    cd /RESEARCH_ROOT
+    
+
+Emitting module for Nuke
+[131 / 188] Nuke
+Discovering Swift tasks after 'Emitting module for Nuke'
+Compile Deprecated.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Deprecated.swift
+
+Compile ImagePipeline+Cache.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImagePipeline+Cache.swift
+
+Compile ImagePipeline+Configuration.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImagePipeline+Configuration.swift
+
+Compile ImagePipeline+Delegate.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImagePipeline+Delegate.swift
+
+Compile ImagePipeline+Error.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImagePipeline+Error.swift
+
+Compiling Deprecated.swift, ImagePipeline+Cache.swift, ImagePipeline+Configuration.swift, ImagePipeline+Delegate.swift, ImagePipeline+Error.swift
+[132 / 188] Nuke
+Unblock downstream dependents of Nuke (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name Nuke -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos13.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Discovering Swift tasks after 'Compiling Deprecated.swift, ImagePipeline+Cache.swift, ImagePipeline+Configuration.swift, ImagePipeline+Delegate.swift, ImagePipeline+Error.swift'
+Compile ImageDecoderRegistry.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageDecoderRegistry.swift
+
+Compile ImageDecoders+Default.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageDecoders+Default.swift
+
+Compile ImageDecoders+Empty.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageDecoders+Empty.swift
+
+Compile ImageDecoding.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageDecoding.swift
+
+Compile ImageEncoders+Default.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageEncoders+Default.swift
+
+Compile ImageEncoders+ImageIO.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageEncoders+ImageIO.swift
+
+Compiling ImageDecoderRegistry.swift, ImageDecoders+Default.swift, ImageDecoders+Empty.swift, ImageDecoding.swift, ImageEncoders+Default.swift, ImageEncoders+ImageIO.swift
+[133 / 188] Nuke
+Compile ImageProcessors+GaussianBlur.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageProcessors+GaussianBlur.swift
+
+Compile ImageProcessors+Resize.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageProcessors+Resize.swift
+
+Compile ImageProcessors+RoundedCorners.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageProcessors+RoundedCorners.swift
+
+Compile ImageProcessors.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageProcessors.swift
+
+Compile AsyncPipelineTask.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile AsyncPipelineTask.swift
+
+Compiling ImageProcessors+GaussianBlur.swift, ImageProcessors+Resize.swift, ImageProcessors+RoundedCorners.swift, ImageProcessors.swift, AsyncPipelineTask.swift
+Compile ImagePipeline.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImagePipeline.swift
+
+Compile ImagePipelineActor.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImagePipelineActor.swift
+
+Compile ImagePrefetcher.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImagePrefetcher.swift
+
+Compile ImageDecompression.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageDecompression.swift
+
+Compile ImageProcessing.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageProcessing.swift
+
+Compiling ImagePipeline.swift, ImagePipelineActor.swift, ImagePrefetcher.swift, ImageDecompression.swift, ImageProcessing.swift
+[136 / 188] Nuke
+Merge Objective-C generated interface headers
+    cd /RESEARCH_ROOT/nuke
+    builtin-swiftHeaderTool -arch arm64 /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke-Swift.h -o /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/GeneratedModuleMaps/Nuke-Swift.h
+
+Discovering Swift tasks after 'Compiling ImageDecoderRegistry.swift, ImageDecoders+Default.swift, ImageDecoders+Empty.swift, ImageDecoding.swift, ImageEncoders+Default.swift, ImageEncoders+ImageIO.swift'
+Compile ImageProcessingOptions.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageProcessingOptions.swift
+
+Compile ImageProcessors+Anonymous.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageProcessors+Anonymous.swift
+
+Compile ImageProcessors+Circle.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageProcessors+Circle.swift
+
+Compile ImageProcessors+Composition.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageProcessors+Composition.swift
+
+Compile ImageProcessors+CoreImage.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageProcessors+CoreImage.swift
+
+Compiling ImageProcessingOptions.swift, ImageProcessors+Anonymous.swift, ImageProcessors+Circle.swift, ImageProcessors+Composition.swift, ImageProcessors+CoreImage.swift
+Copy Nuke.swiftmodule (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.swiftmodule /RESEARCH_ROOT/nuke/.build/out/Products/Debug/Nuke.swiftmodule/arm64-apple-macos.swiftmodule
+
+Copy Nuke.swiftdoc (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.swiftdoc /RESEARCH_ROOT/nuke/.build/out/Products/Debug/Nuke.swiftmodule/arm64-apple-macos.swiftdoc
+
+Copy Nuke.abi.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.abi.json /RESEARCH_ROOT/nuke/.build/out/Products/Debug/Nuke.swiftmodule/arm64-apple-macos.abi.json
+
+Discovering Swift tasks after 'Compiling ImageProcessors+GaussianBlur.swift, ImageProcessors+Resize.swift, ImageProcessors+RoundedCorners.swift, ImageProcessors.swift, AsyncPipelineTask.swift'
+Copy Nuke.swiftsourceinfo (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.swiftsourceinfo /RESEARCH_ROOT/nuke/.build/out/Products/Debug/Nuke.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+Discovering Swift tasks after 'Compiling ImagePipeline.swift, ImagePipelineActor.swift, ImagePrefetcher.swift, ImageDecompression.swift, ImageProcessing.swift'
+Discovering Swift tasks after 'Compiling ImageProcessingOptions.swift, ImageProcessors+Anonymous.swift, ImageProcessors+Circle.swift, ImageProcessors+Composition.swift, ImageProcessors+CoreImage.swift'
+Compile RateLimiter.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile RateLimiter.swift
+
+Compile ResumableData.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ResumableData.swift
+
+Compile TaskQueue.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile TaskQueue.swift
+
+Compile DataLoader.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile DataLoader.swift
+
+Compile DataLoading.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile DataLoading.swift
+
+Compiling RateLimiter.swift, ResumableData.swift, TaskQueue.swift, DataLoader.swift, DataLoading.swift
+[142 / 188] Nuke
+Discovering Swift tasks after 'Compiling RateLimiter.swift, ResumableData.swift, TaskQueue.swift, DataLoader.swift, DataLoading.swift'
+Compile Cache.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Cache.swift
+
+Compile DataCache.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile DataCache.swift
+
+Compile DataCaching.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile DataCaching.swift
+
+Compile ImageCache.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageCache.swift
+
+Compile ImageCaching.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageCaching.swift
+
+Compile AssetType.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile AssetType.swift
+
+Compiling Cache.swift, DataCache.swift, DataCaching.swift, ImageCache.swift, ImageCaching.swift, AssetType.swift
+[143 / 188] ResearchRepro-product
+Discovering Swift tasks after 'Compiling Cache.swift, DataCache.swift, DataCaching.swift, ImageCache.swift, ImageCaching.swift, AssetType.swift'
+Process product packaging
+    cd /RESEARCH_ROOT/nuke
+    
+    Entitlements:
+    
+    {
+    "com.apple.security.get-task-allow" = 1;
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/ResearchRepro.xctest.xcent
+
+Generate DER entitlements
+    cd /RESEARCH_ROOT/nuke
+    /usr/bin/derq query -f xml -i /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/ResearchRepro.xctest.xcent -o /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/ResearchRepro.xctest.xcent.der --raw
+
+Compile AsyncTask.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile AsyncTask.swift
+
+Compile TaskFetchOriginalData.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile TaskFetchOriginalData.swift
+
+Compile TaskFetchOriginalImage.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile TaskFetchOriginalImage.swift
+
+Compile TaskLoadData.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile TaskLoadData.swift
+
+Compile TaskLoadImage.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile TaskLoadImage.swift
+
+Compiling AsyncTask.swift, TaskFetchOriginalData.swift, TaskFetchOriginalImage.swift, TaskLoadData.swift, TaskLoadImage.swift
+[146 / 189]
+Discovering Swift tasks after 'Compiling AsyncTask.swift, TaskFetchOriginalData.swift, TaskFetchOriginalImage.swift, TaskLoadData.swift, TaskLoadImage.swift'
+Compile Extensions.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Extensions.swift
+
+Compile Graphics.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Graphics.swift
+
+Compile ImageRequestKeys.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageRequestKeys.swift
+
+Compile LinkedList.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile LinkedList.swift
+
+Compile Log.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Log.swift
+
+Compile Mutex.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Mutex.swift
+
+Compiling Extensions.swift, Graphics.swift, ImageRequestKeys.swift, LinkedList.swift, Log.swift, Mutex.swift
+Discovering Swift tasks after 'Compiling Extensions.swift, Graphics.swift, ImageRequestKeys.swift, LinkedList.swift, Log.swift, Mutex.swift'
+Planning Swift module NukeVideo (arm64)
+    cd /RESEARCH_ROOT
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name NukeVideo -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos13.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+[148 / 191]
+Planning Swift module NukeUI (arm64)
+    cd /RESEARCH_ROOT
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name NukeUI -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos13.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+[150 / 195] NukeVideo
+Planning Swift module NukeExtensions (arm64)
+    cd /RESEARCH_ROOT
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name NukeExtensions -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos13.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Compiling Clang module SwiftUI
+[151 / 205]
+Compile
+    cd /RESEARCH_ROOT
+    
+
+Emitting module for NukeVideo
+Discovering Swift tasks after 'Emitting module for NukeVideo'
+Compile
+    cd /RESEARCH_ROOT
+    
+
+Emitting module for NukeExtensions
+[154 / 205] NukeVideo
+Discovering Swift tasks after 'Emitting module for NukeExtensions'
+Unblock downstream dependents of NukeVideo (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name NukeVideo -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos13.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Unblock downstream dependents of NukeExtensions (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name NukeExtensions -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos13.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Merge Objective-C generated interface headers
+    cd /RESEARCH_ROOT/nuke
+    builtin-swiftHeaderTool -arch arm64 /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo-Swift.h -o /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/GeneratedModuleMaps/NukeVideo-Swift.h
+
+Copy NukeVideo.swiftmodule (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.swiftmodule /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeVideo.swiftmodule/arm64-apple-macos.swiftmodule
+
+Copy NukeVideo.swiftdoc (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.swiftdoc /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeVideo.swiftmodule/arm64-apple-macos.swiftdoc
+
+Copy NukeVideo.abi.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.abi.json /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeVideo.swiftmodule/arm64-apple-macos.abi.json
+
+Copy NukeVideo.swiftsourceinfo (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.swiftsourceinfo /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeVideo.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+Merge Objective-C generated interface headers
+    cd /RESEARCH_ROOT/nuke
+    builtin-swiftHeaderTool -arch arm64 /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions-Swift.h -o /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/GeneratedModuleMaps/NukeExtensions-Swift.h
+
+Copy NukeExtensions.swiftmodule (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.swiftmodule /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeExtensions.swiftmodule/arm64-apple-macos.swiftmodule
+
+Copy NukeExtensions.swiftdoc (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.swiftdoc /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeExtensions.swiftmodule/arm64-apple-macos.swiftdoc
+
+Copy NukeExtensions.abi.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.abi.json /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeExtensions.swiftmodule/arm64-apple-macos.abi.json
+
+Copy NukeExtensions.swiftsourceinfo (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.swiftsourceinfo /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeExtensions.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+Compile
+    cd /RESEARCH_ROOT
+    
+
+Emitting module for NukeUI
+[166 / 205] NukeVideo-product
+Discovering Swift tasks after 'Emitting module for NukeUI'
+Compile ImageEncoders.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageEncoders.swift
+
+Compile ImageEncoding.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageEncoding.swift
+
+Compile ImageContainer.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageContainer.swift
+
+Compile ImageRequest.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageRequest.swift
+
+Compile ImageResponse.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageResponse.swift
+
+Compile ImageTask.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageTask.swift
+
+Compiling ImageEncoders.swift, ImageEncoding.swift, ImageContainer.swift, ImageRequest.swift, ImageResponse.swift, ImageTask.swift
+[168 / 205] NukeUI
+Unblock downstream dependents of NukeUI (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name NukeUI -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos13.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Discovering Swift tasks after 'Compiling ImageEncoders.swift, ImageEncoding.swift, ImageContainer.swift, ImageRequest.swift, ImageResponse.swift, ImageTask.swift'
+Compile AVDataAsset.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile AVDataAsset.swift
+
+Compiling AVDataAsset.swift
+[169 / 205] NukeVideo
+Merge Objective-C generated interface headers
+    cd /RESEARCH_ROOT/nuke
+    builtin-swiftHeaderTool -arch arm64 /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI-Swift.h -o /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/GeneratedModuleMaps/NukeUI-Swift.h
+
+Discovering Swift tasks after 'Compiling AVDataAsset.swift'
+Copy NukeUI.swiftmodule (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.swiftmodule /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeUI.swiftmodule/arm64-apple-macos.swiftmodule
+
+Copy NukeUI.swiftdoc (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.swiftdoc /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeUI.swiftmodule/arm64-apple-macos.swiftdoc
+
+Copy NukeUI.abi.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.abi.json /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeUI.swiftmodule/arm64-apple-macos.abi.json
+
+Copy NukeUI.swiftsourceinfo (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.swiftsourceinfo /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeUI.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+Compile ImageDecoders+Video.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageDecoders+Video.swift
+
+Compiling ImageDecoders+Video.swift
+[176 / 205] NukeUI
+Discovering Swift tasks after 'Compiling ImageDecoders+Video.swift'
+Compile VideoPlayerView.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile VideoPlayerView.swift
+
+Compiling VideoPlayerView.swift
+Discovering Swift tasks after 'Compiling VideoPlayerView.swift'
+Compile LazyImageView.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile LazyImageView.swift
+
+Compiling LazyImageView.swift
+[177 / 205] NukeUI
+Compile NukeVideo (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name NukeVideo -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos13.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Discovering Swift tasks after 'Compiling LazyImageView.swift'
+Compile Internal.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile Internal.swift
+
+Compiling Internal.swift
+[179 / 205] NukeUI-product
+Discovering Swift tasks after 'Compiling Internal.swift'
+Compile LazyImageState.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile LazyImageState.swift
+
+Compiling LazyImageState.swift
+Discovering Swift tasks after 'Compiling LazyImageState.swift'
+Compile LazyImage.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile LazyImage.swift
+
+Compiling LazyImage.swift
+[181 / 205] NukeExtensions-product
+Discovering Swift tasks after 'Compiling LazyImage.swift'
+Compile Nuke (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name Nuke -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos13.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Compile FetchImage.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile FetchImage.swift
+
+Compiling FetchImage.swift
+[183 / 205]
+Discovering Swift tasks after 'Compiling FetchImage.swift'
+Compile NukeUI (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name NukeUI -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos13.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Link Nuke.o (arm64)
+    cd /RESEARCH_ROOT/nuke
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos13.0 -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -F/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/EagerLinkingTBDs/Debug -F/RESEARCH_ROOT/nuke/.build/out/Products/Debug -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -filelist /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke_lto.o -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-t.build/Objects-normal/arm64/Nuke.swiftmodule -o /RESEARCH_ROOT/nuke/.build/out/Products/Debug/Nuke.o
+
+Generate entry point for ResearchRepro
+    cd /RESEARCH_ROOT/nuke
+    builtin-generateTestEntryPoint --output /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/DerivedSources/test_entry_point.swift
+
+Link NukeUI.o (arm64)
+    cd /RESEARCH_ROOT/nuke
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos13.0 -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -F/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/EagerLinkingTBDs/Debug -F/RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F/RESEARCH_ROOT/nuke/.build/out/Products/Debug -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -filelist /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI_lto.o -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-t.build/Objects-normal/arm64/NukeUI.swiftmodule -o /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeUI.o
+
+[187 / 205] NukeExtensions
+Link NukeVideo.o (arm64)
+    cd /RESEARCH_ROOT/nuke
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos13.0 -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -F/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/EagerLinkingTBDs/Debug -F/RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F/RESEARCH_ROOT/nuke/.build/out/Products/Debug -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -filelist /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo_lto.o -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-t.build/Objects-normal/arm64/NukeVideo.swiftmodule -o /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeVideo.o
+
+Process empty-ResearchRepro.plist
+    cd /RESEARCH_ROOT/nuke
+    builtin-infoPlistUtility /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/empty-ResearchRepro.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -platform macosx -o /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Info.plist
+
+Create static library libNuke.a (arm64)
+    cd /RESEARCH_ROOT/nuke
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -L/RESEARCH_ROOT/nuke/.build/out/Products/Debug -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -filelist /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-product-p.build/Objects-normal/arm64/Nuke.LinkFileList -no_warning_for_no_symbols -dependency_info /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/Nuke-product-p.build/Objects-normal/arm64/Nuke_libtool_dependency_info.dat -o /RESEARCH_ROOT/nuke/.build/out/Products/Debug/libNuke.a
+
+Create static library libNukeVideo.a (arm64)
+    cd /RESEARCH_ROOT/nuke
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -L/RESEARCH_ROOT/nuke/.build/out/Products/Debug -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -filelist /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-product-p.build/Objects-normal/arm64/NukeVideo.LinkFileList -no_warning_for_no_symbols -dependency_info /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeVideo-product-p.build/Objects-normal/arm64/NukeVideo_libtool_dependency_info.dat -o /RESEARCH_ROOT/nuke/.build/out/Products/Debug/libNukeVideo.a
+
+[191 / 206]
+Create static library libNukeUI.a (arm64)
+    cd /RESEARCH_ROOT/nuke
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -L/RESEARCH_ROOT/nuke/.build/out/Products/Debug -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -filelist /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-product-p.build/Objects-normal/arm64/NukeUI.LinkFileList -no_warning_for_no_symbols -dependency_info /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeUI-product-p.build/Objects-normal/arm64/NukeUI_libtool_dependency_info.dat -o /RESEARCH_ROOT/nuke/.build/out/Products/Debug/libNukeUI.a
+
+Compile ImageLoadingOptions.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageLoadingOptions.swift
+
+Compiling ImageLoadingOptions.swift
+[192 / 206] NukeExtensions
+Discovering Swift tasks after 'Compiling ImageLoadingOptions.swift'
+Compile ImageViewExtensions.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ImageViewExtensions.swift
+
+Compiling ImageViewExtensions.swift
+Discovering Swift tasks after 'Compiling ImageViewExtensions.swift'
+Compile NukeExtensions (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name NukeExtensions -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos13.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions-Swift.h -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Link NukeExtensions.o (arm64)
+    cd /RESEARCH_ROOT/nuke
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos13.0 -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -F/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/EagerLinkingTBDs/Debug -F/RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F/RESEARCH_ROOT/nuke/.build/out/Products/Debug -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -filelist /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions_lto.o -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-t.build/Objects-normal/arm64/NukeExtensions.swiftmodule -o /RESEARCH_ROOT/nuke/.build/out/Products/Debug/NukeExtensions.o
+
+[194 / 206] NukeExtensions
+Create static library libNukeExtensions.a (arm64)
+    cd /RESEARCH_ROOT/nuke
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -L/RESEARCH_ROOT/nuke/.build/out/Products/Debug -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -filelist /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-product-p.build/Objects-normal/arm64/NukeExtensions.LinkFileList -no_warning_for_no_symbols -dependency_info /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/NukeExtensions-product-p.build/Objects-normal/arm64/NukeExtensions_libtool_dependency_info.dat -o /RESEARCH_ROOT/nuke/.build/out/Products/Debug/libNukeExtensions.a
+
+Planning Swift module ResearchRepro (arm64)
+    cd /RESEARCH_ROOT
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name ResearchRepro -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos14.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+[195 / 206] ResearchRepro-product
+Compiling Swift module Testing
+[196 / 212]
+Compiling Swift module _Testing_CoreGraphics
+[197 / 212]
+Compiling Swift module _Testing_AppKit
+[198 / 212]
+Compile test_entry_point.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile test_entry_point.swift
+
+Compiling test_entry_point.swift
+[201 / 212] ResearchRepro-product
+Discovering Swift tasks after 'Compiling test_entry_point.swift'
+Compile
+    cd /RESEARCH_ROOT
+    
+
+Emitting module for ResearchRepro
+Discovering Swift tasks after 'Emitting module for ResearchRepro'
+Unblock downstream dependents of ResearchRepro (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name ResearchRepro -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos14.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Copy ResearchRepro.swiftmodule (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftmodule /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.swiftmodule/arm64-apple-macos.swiftmodule
+
+Copy ResearchRepro.abi.json (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.abi.json /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.swiftmodule/arm64-apple-macos.abi.json
+
+Copy ResearchRepro.swiftdoc (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftdoc /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.swiftmodule/arm64-apple-macos.swiftdoc
+
+Copy ResearchRepro.swiftsourceinfo (arm64)
+    cd /RESEARCH_ROOT/nuke
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftsourceinfo /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+Compile ResearchRepro.swift
+    cd /RESEARCH_ROOT
+    builtin-SwiftPerFileCompile ResearchRepro.swift
+
+Compiling ResearchRepro.swift
+[206 / 212] ResearchRepro-product
+Discovering Swift tasks after 'Compiling ResearchRepro.swift'
+Compile ResearchRepro (arm64)
+    cd /RESEARCH_ROOT
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name ResearchRepro -Onone @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos14.0 -g -module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -Xfrontend -serialize-debugging-options -disable-sandbox -enable-testing -index-store-path /RESEARCH_ROOT/nuke/.build/out -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /RESEARCH_ROOT/nuke/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F /RESEARCH_ROOT/nuke/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /RESEARCH_ROOT/nuke/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex -sdk-module-cache-path /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /RESEARCH_ROOT/nuke/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name nuke -emit-const-values -const-gather-protocols-list /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_const_extract_protocols.json -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Products/Debug/include -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/DerivedSources-normal/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/DerivedSources/arm64 -Xcc -I/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -working-directory /RESEARCH_ROOT -experimental-emit-module-separately -disable-cmo
+
+Link ResearchRepro (arm64)
+    cd /RESEARCH_ROOT/nuke
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -Xlinker -reproducible -target arm64-apple-macos14.0 -Xlinker -bundle -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -Xlinker -no_warn_duplicate_libraries -L/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/EagerLinkingTBDs/Debug -L/RESEARCH_ROOT/nuke/.build/out/Products/Debug -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/EagerLinkingTBDs/Debug -F/RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -F/RESEARCH_ROOT/nuke/.build/out/Products/Debug -Fsystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks @/RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /RESEARCH_ROOT/nuke/.build/out/Products/Debug/PackageFrameworks -Xlinker -rpath -Xlinker @loader_path/../../.. -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @loader_path/../Frameworks -Xlinker -rpath -Xlinker /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_lto.o -Xclang-linker -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro_dependency_info.dat -link-objc-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/Objects-normal/arm64/ResearchRepro.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -Xlinker -no_adhoc_codesign -o /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest/Contents/MacOS/ResearchRepro -no-stdlib-rpath
+
+[208 / 212] ResearchRepro-product
+Copy Swift standard libraries into ResearchRepro.xctest
+    cd /RESEARCH_ROOT/nuke
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest/Contents/MacOS/ResearchRepro --scan-folder /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Frameworks --scan-folder /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest/Contents/PlugIns --scan-folder /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Library/SystemExtensions --scan-folder /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Extensions --platform macosx --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest/Contents/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+
+Sign ResearchRepro.xctest
+    cd /RESEARCH_ROOT/nuke
+    
+    Signing Identity:     "-"
+    
+    /usr/bin/codesign --force --sign - --entitlements /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/Nuke.build/Debug/ResearchRepro-p.build/ResearchRepro.xctest.xcent --timestamp\=none --generate-entitlement-der --strip-disallowed-xattrs /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest
+
+[210 / 212] ResearchRepro-product
+Register execution policy exception for ResearchRepro.xctest
+    cd /RESEARCH_ROOT/nuke
+    builtin-RegisterExecutionPolicyException /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest
+
+Touch ResearchRepro.xctest
+    cd /RESEARCH_ROOT/nuke
+    /usr/bin/touch -c /RESEARCH_ROOT/nuke/.build/out/Products/Debug/ResearchRepro.xctest
+
+Prune stale explicit modules at /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/ExplicitPrecompiledModules
+Prune stale explicit modules at /RESEARCH_ROOT/nuke/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules
+Prune stale explicit modules at /RESEARCH_ROOT/nuke/.build/out/SDKExplicitPrecompiledModules
+Build complete! (73,16 sec)
+􀟈  Test run started.
+􀄵  Swift Standard Library Version: 6.4
+􀄵  Swift Compiler Version: 6.4.2
+􀄵  Testing Library Version: 2403
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀄵  OS Version: 27.2 (26B123)
+􀟈  Suite ResearchRepro started.
+􀟈  Test immediateMemoryHitKeepsTerminalEvent() started.
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 0
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 1
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 2
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 3
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 4
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 5
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 6
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 7
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 8
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 9
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 10
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 11
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 12
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 13
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 14
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 15
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 16
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 17
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 18
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() recorded an issue at ResearchRepro.swift:17:13: Expectation failed: terminal == 1
+􀄵  immediate memory hit iteration 19
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test immediateMemoryHitKeepsTerminalEvent() failed after 0.074 seconds with 20 issues.
+􀟈  Test completedTaskReplaysTerminalEvent() started.
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 0
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 1
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 2
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 3
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 4
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 5
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 6
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 7
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 8
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 9
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 10
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 11
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 12
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 13
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 14
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 15
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 16
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 17
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 18
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() recorded an issue at ResearchRepro.swift:32:13: Expectation failed: terminal == 1
+􀄵  late subscriber iteration 19
+􀄵  terminal == 1: Swift.Bool → false
+􀄵    terminal: Swift.Int → 0
+􀄵    1: Swift.Int → 1
+􀢄  Test completedTaskReplaysTerminalEvent() failed after 0.004 seconds with 20 issues.
+􀢄  Suite ResearchRepro failed after 0.078 seconds with 40 issues.
+􀢄  Test run with 2 tests in 1 suite failed after 0.078 seconds with 40 issues.
+Note: Some test targets reported failures:
+  - ResearchRepro (Swift Testing)

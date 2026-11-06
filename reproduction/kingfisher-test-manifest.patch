@@ -1,0 +1,10 @@
+diff --git a/Package@swift-5.9.swift b/Package@swift-5.9.swift
+index 4bf42e4..98f9409 100644
+--- a/Package@swift-5.9.swift
++++ b/Package@swift-5.9.swift
+@@ -21,3 +21,5 @@ let package = Package(
+         )
+     ]
+ )
++
++package.targets.append(.testTarget(name: "ResearchRepro", dependencies: ["Kingfisher"], path: "ResearchRepro"))

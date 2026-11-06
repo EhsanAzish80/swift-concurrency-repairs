@@ -1,0 +1,13 @@
+{
+  "title": "What Swift Concurrency Repairs Actually Guarantee",
+  "version": "1.0",
+  "date": "2026-11-06",
+  "authors": [
+    "Ehsan Azish"
+  ],
+  "arxiv": null,
+  "zenodo": null,
+  "github": "https://github.com/EhsanAzish80/swift-concurrency-repairs",
+  "html": "https://3nsofts.com/insights/swift-concurrency-repair-guarantees",
+  "pdf": "https://3nsofts.com/research/swift-concurrency-repairs/swift-concurrency-repairs-v1.0.pdf"
+}
