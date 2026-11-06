@@ -4,7 +4,7 @@ Practitioner technical report by Ehsan Azish, 6 November 2026. Two completed loc
 
 [Read the report (PDF)](report/swift-concurrency-repairs-v1.0.pdf) | [Download the PDF](https://raw.githubusercontent.com/EhsanAzish80/swift-concurrency-repairs/main/report/swift-concurrency-repairs-v1.0.pdf)
 
-The readable 3nsofts HTML edition is awaiting deployment; it is not linked as an available copy.
+[Read the HTML edition on 3nsofts](https://3nsofts.com/insights/swift-concurrency-repair-guarantees). The page, PDF and artifact ZIP were verified to return HTTP 200 on 6 November 2026.
 
 [Archived report and artifacts on Zenodo](https://doi.org/10.5281/zenodo.24005436) | [Swift Forums discussion](https://forums.swift.org/t/pitch-split-continuation/90096/15)
 
