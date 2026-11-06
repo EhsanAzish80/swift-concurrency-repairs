@@ -6,8 +6,9 @@
     "Ehsan Azish"
   ],
   "arxiv": null,
-  "zenodo": null,
+  "zenodo": "https://doi.org/10.5281/zenodo.24005436",
   "github": "https://github.com/EhsanAzish80/swift-concurrency-repairs",
-  "html": "https://3nsofts.com/insights/swift-concurrency-repair-guarantees",
-  "pdf": "https://3nsofts.com/research/swift-concurrency-repairs/swift-concurrency-repairs-v1.0.pdf"
+  "html": null,
+  "pdf": "https://github.com/EhsanAzish80/swift-concurrency-repairs/blob/main/report/swift-concurrency-repairs-v1.0.pdf",
+  "swift_forums": "https://forums.swift.org/t/pitch-split-continuation/90096/15"
 }

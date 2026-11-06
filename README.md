@@ -6,7 +6,9 @@ Practitioner technical report by Ehsan Azish, 6 November 2026. Two completed loc
 
 The readable 3nsofts HTML edition is awaiting deployment; it is not linked as an available copy.
 
-ArXiv and Zenodo identifiers are pending and are not invented.
+[Archived report and artifacts on Zenodo](https://doi.org/10.5281/zenodo.24005436) | [Swift Forums discussion](https://forums.swift.org/t/pitch-split-continuation/90096/15)
+
+arXiv submission remains pending. The Zenodo v1.0 archive preserves the initial files, whose README and publication metadata predate the live-link correction; use the links above for current access. Author-owned report and study material are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); bundled third-party material retains its original licenses.
 
 ## Results and scope
 

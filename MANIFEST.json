@@ -1,13 +1,13 @@
 [
   {
     "file": "CITATION.cff",
-    "sha256": "bcbf3298693324533f559889ffad0b1757be280bde82cf3c5aaa9ccdecd6759c",
-    "bytes": 276
+    "sha256": "95c27dff433e837a06090a95f42b46abeaefb8676f9a645debdb86422419116b",
+    "bytes": 365
   },
   {
     "file": "README.md",
-    "sha256": "a50fd1478df2d4d606a9f0812866c874dcd46009381261bb1e511533ad42a5ee",
-    "bytes": 4329
+    "sha256": "9a34b3c3f5db631e4dfb1fe64ef92566d000138d16826620076c6842c51f571a",
+    "bytes": 4983
   },
   {
     "file": "THIRD_PARTY_LICENSES/kingfisher-LICENSE",
@@ -46,8 +46,8 @@
   },
   {
     "file": "publication.json",
-    "sha256": "b8f7a795fe52ce48b98e4568a3dc55f47051e6040b72e256026d26c878041e51",
-    "bytes": 437
+    "sha256": "1a9d7bd1e3a0f78796d06fa62640bfbeb254b4c6f7ba3eb5625c190727b1cadf",
+    "bytes": 514
   },
   {
     "file": "report/render_report.py",
