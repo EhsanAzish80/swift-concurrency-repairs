@@ -8,7 +8,7 @@ The readable 3nsofts HTML edition is awaiting deployment; it is not linked as an
 
 [Archived report and artifacts on Zenodo](https://doi.org/10.5281/zenodo.24005436) | [Swift Forums discussion](https://forums.swift.org/t/pitch-split-continuation/90096/15)
 
-arXiv submission remains pending. The Zenodo v1.0 archive preserves the initial files, whose README and publication metadata predate the live-link correction; use the links above for current access. Author-owned report and study material are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); bundled third-party material retains its original licenses.
+arXiv submission remains pending. The Zenodo v1.0 archive preserves the initial files, whose README and publication metadata predate the live-link correction; use the links above for current access. The report, original data and logs are licensed under [CC BY 4.0](LICENSES/CC-BY-4.0.txt); original scripts and research fixtures are [MIT licensed](LICENSES/MIT.txt). See [LICENSE](LICENSE) for exact scopes and third-party exceptions.
 
 ## Results and scope
 

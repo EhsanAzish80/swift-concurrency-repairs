@@ -1,13 +1,28 @@
 [
   {
     "file": "CITATION.cff",
-    "sha256": "95c27dff433e837a06090a95f42b46abeaefb8676f9a645debdb86422419116b",
-    "bytes": 365
+    "sha256": "f8a8260dc7c38ecd724b6ad89e76ecdb81f0667b72a7bd33036f1f7846e39f47",
+    "bytes": 440
+  },
+  {
+    "file": "LICENSE",
+    "sha256": "f02f9944962ba7fc9ea68f65ce0bf6e8f749ee755981eeede4c7015f284c5311",
+    "bytes": 1384
+  },
+  {
+    "file": "LICENSES/CC-BY-4.0.txt",
+    "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+    "bytes": 17023
+  },
+  {
+    "file": "LICENSES/MIT.txt",
+    "sha256": "0c6b9eef533c8e9c0ac9d32cb5c2dfe5e0d3eb385eb6d720cb1bfdd8b2575ec3",
+    "bytes": 1068
   },
   {
     "file": "README.md",
-    "sha256": "9a34b3c3f5db631e4dfb1fe64ef92566d000138d16826620076c6842c51f571a",
-    "bytes": 4983
+    "sha256": "60c1ec2b4ddc51d829d2f8f901a8336591f30abd1dc5fa551609b85bbfc3a7a1",
+    "bytes": 5042
   },
   {
     "file": "THIRD_PARTY_LICENSES/kingfisher-LICENSE",
@@ -46,8 +61,8 @@
   },
   {
     "file": "publication.json",
-    "sha256": "1a9d7bd1e3a0f78796d06fa62640bfbeb254b4c6f7ba3eb5625c190727b1cadf",
-    "bytes": 514
+    "sha256": "6dd2aa87fe38f0e292a693525b1c3d8bc782883404bf4a5898a45fcc32f914d4",
+    "bytes": 690
   },
   {
     "file": "report/render_report.py",

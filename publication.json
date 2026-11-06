@@ -9,6 +9,12 @@
   "zenodo": "https://doi.org/10.5281/zenodo.24005436",
   "github": "https://github.com/EhsanAzish80/swift-concurrency-repairs",
   "html": null,
-  "pdf": "https://github.com/EhsanAzish80/swift-concurrency-repairs/blob/main/report/swift-concurrency-repairs-v1.0.pdf",
-  "swift_forums": "https://forums.swift.org/t/pitch-split-continuation/90096/15"
+  "pdf": null,
+  "swift_forums": "https://forums.swift.org/t/pitch-split-continuation/90096/15",
+  "repository_pdf": "https://github.com/EhsanAzish80/swift-concurrency-repairs/blob/main/report/swift-concurrency-repairs-v1.0.pdf",
+  "licenses": {
+    "report_and_data": "CC-BY-4.0",
+    "scripts_and_original_fixtures": "MIT",
+    "third_party": "original licenses preserved"
+  }
 }

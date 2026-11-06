@@ -1,0 +1,27 @@
+Licensing for Swift Concurrency Repairs
+Copyright (c) 2026 Ehsan Azish
+
+Author-owned material is licensed as follows:
+
+* Report prose and documents (report/*.pdf, report/*.md, report/report-content.json),
+  original study data (data/), metadata, README and original log/provenance material:
+  Creative Commons Attribution 4.0 International (CC-BY-4.0).
+  Full terms: LICENSES/CC-BY-4.0.txt
+  https://creativecommons.org/licenses/by/4.0/
+
+* Original scripts (report/render_report.py, reproduction/install_fixtures.py,
+  reproduction/run_test.py), research test fixtures (reproduction/fixtures/nio.swift,
+  reproduction/fixtures/nuke.swift, reproduction/fixtures/kingfisher.swift), and
+  original contributions to test-manifest patches: MIT.
+  Full terms: LICENSES/MIT.txt
+
+Third-party exceptions:
+Upstream Package.swift snapshots, dependency resolution files, upstream portions
+of patches, quotations, and third-party portions of build/test output retain their
+original terms. No additional rights in third-party material are claimed.
+See THIRD_PARTY_LICENSES/ for NIO (Apache-2.0 and NOTICE), Nuke (MIT), and
+Kingfisher (MIT). The split licenses above apply only to author-owned material;
+they do not replace those upstream licenses or notices.
+
+Recommended attribution: Ehsan Azish, What Swift Concurrency Repairs Actually
+Guarantee (2026), https://doi.org/10.5281/zenodo.24005436 .
