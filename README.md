@@ -2,7 +2,9 @@
 
 Practitioner technical report by Ehsan Azish, 6 November 2026. Two completed local regression comparisons and a targeted source review of 29 production defect families. Not peer reviewed; classifications are provisional AI-assisted first-pass coding without independent human agreement scores.
 
-[Read the HTML report](https://3nsofts.com/insights/swift-concurrency-repair-guarantees) | [PDF](report/swift-concurrency-repairs-v1.0.pdf)
+[Read the report (PDF)](report/swift-concurrency-repairs-v1.0.pdf) | [Download the PDF](https://raw.githubusercontent.com/EhsanAzish80/swift-concurrency-repairs/main/report/swift-concurrency-repairs-v1.0.pdf)
+
+The readable 3nsofts HTML edition is awaiting deployment; it is not linked as an available copy.
 
 ArXiv and Zenodo identifiers are pending and are not invented.
 
